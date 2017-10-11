@@ -1,0 +1,1580 @@
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 2 -mca plm_rsh_no_tree_spawn 1 ex2
+Master is up.
+Task #0 got message from task #1.
+Task #0 sent message to task #1.
+Task #0's message to task 1 got received.
+Task #1 sent message to task #0.
+Task #1's message to task 0 got received.
+Task #1 got message from task #0.
+
+real	0m0.387s
+user	0m0.108s
+sys	0m0.036s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 4 -mca plm_rsh_no_tree_spawn 1 ex2
+Master is up.
+Task #3 sent message to task #1.
+Task #3's message to task 1 got received.
+Task #0 got message from task #2.
+Task #2 sent message to task #0.
+Task #2's message to task 0 got received.
+Task #0 sent message to task #2.
+Task #0's message to task 2 got received.
+Task #1 got message from task #3.
+Task #1 sent message to task #3.
+Task #2 got message from task #0.
+Task #1's message to task 3 got received.
+Task #3 got message from task #1.
+
+real	0m0.363s
+user	0m0.132s
+sys	0m0.072s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 8 -mca plm_rsh_no_tree_spawn 1 ex2
+Master is up.
+Task #7 sent message to task #3.
+Task #4 sent message to task #0.
+Task #5 sent message to task #1.
+Task #6 sent message to task #2.
+Task #3 got message from task #7.
+Task #0 got message from task #4.
+Task #0 sent message to task #4.
+Task #0's message to task 4 got received.
+Task #1 got message from task #5.
+Task #1 sent message to task #5.
+Task #1's message to task 5 got received.
+Task #2 got message from task #6.
+Task #2 sent message to task #6.
+Task #2's message to task 6 got received.
+Task #3 sent message to task #7.
+Task #3's message to task 7 got received.
+Task #7's message to task 3 got received.
+Task #4's message to task 0 got received.
+Task #6's message to task 2 got received.
+Task #5's message to task 1 got received.
+Task #4 got message from task #0.
+Task #6 got message from task #2.
+Task #5 got message from task #1.
+Task #7 got message from task #3.
+
+real	0m0.401s
+user	0m0.116s
+sys	0m0.032s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 16 -mca plm_rsh_no_tree_spawn 1 ex2
+^[[AMaster is up.
+Task #1 got message from task #9.
+Task #1 sent message to task #9.
+Task #1's message to task 9 got received.
+Task #9 sent message to task #1.
+Task #8 sent message to task #0.
+Task #9's message to task 1 got received.
+Task #0 got message from task #8.
+Task #0 sent message to task #8.
+Task #0's message to task 8 got received.
+Task #9 got message from task #1.
+Task #8's message to task 0 got received.
+Task #15 sent message to task #7.
+Task #12 sent message to task #4.
+Task #13 sent message to task #5.
+Task #10 sent message to task #2.
+Task #8 got message from task #0.
+Task #14 sent message to task #6.
+Task #11 sent message to task #3.
+Task #15's message to task 7 got received.
+Task #7 got message from task #15.
+Task #7 sent message to task #15.
+Task #13's message to task 5 got received.
+Task #7's message to task 15 got received.
+Task #14's message to task 6 got received.
+Task #15 got message from task #7.
+Task #5 got message from task #13.
+Task #5 sent message to task #13.
+Task #5's message to task 13 got received.
+Task #14 got message from task #6.
+Task #6 got message from task #14.
+Task #6 sent message to task #14.
+Task #6's message to task 14 got received.
+Task #13 got message from task #5.
+Task #2 got message from task #10.
+Task #2 sent message to task #10.
+Task #2's message to task 10 got received.
+Task #4 got message from task #12.
+Task #4 sent message to task #12.
+Task #4's message to task 12 got received.
+Task #10's message to task 2 got received.
+Task #10 got message from task #2.
+Task #12's message to task 4 got received.
+Task #12 got message from task #4.
+Task #3 got message from task #11.
+Task #3 sent message to task #11.
+Task #3's message to task 11 got received.
+Task #11's message to task 3 got received.
+Task #11 got message from task #3.
+
+real	0m0.419s
+user	0m0.164s
+sys	0m0.116s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 32 -mca plm_rsh_no_tree_spawn 1 ex2
+Master is up.
+Task #25 sent message to task #9.
+Task #17 sent message to task #1.
+Task #16 sent message to task #0.
+Task #23 sent message to task #7.
+Task #24 sent message to task #8.
+Task #0 got message from task #16.
+Task #0 sent message to task #16.
+Task #0's message to task 16 got received.
+Task #31 sent message to task #15.
+Task #16's message to task 0 got received.
+Task #1 got message from task #17.
+Task #1 sent message to task #17.
+Task #1's message to task 17 got received.
+Task #17's message to task 1 got received.
+Task #30 sent message to task #14.
+Task #26 sent message to task #10.
+Task #16 got message from task #0.
+Task #27 sent message to task #11.
+Task #17 got message from task #1.
+Task #28 sent message to task #12.
+Task #31's message to task 15 got received.
+Task #22 sent message to task #6.
+Task #26's message to task 10 got received.
+Task #10 got message from task #26.
+Task #10 sent message to task #26.
+Task #28's message to task 12 got received.
+Task #10's message to task 26 got received.
+Task #26 got message from task #10.
+Task #15 got message from task #31.
+Task #15 sent message to task #31.
+Task #15's message to task 31 got received.
+Task #31 got message from task #15.
+Task #12 got message from task #28.
+Task #12 sent message to task #28.
+Task #28 got message from task #12.
+Task #20 sent message to task #4.
+Task #12's message to task 28 got received.
+Task #21 sent message to task #5.
+Task #9 got message from task #25.
+Task #9 sent message to task #25.
+Task #9's message to task 25 got received.
+Task #6 got message from task #22.
+Task #6 sent message to task #22.
+Task #6's message to task 22 got received.
+Task #25's message to task 9 got received.
+Task #4 got message from task #20.
+Task #4 sent message to task #20.
+Task #25 got message from task #9.
+Task #4's message to task 20 got received.
+Task #27's message to task 11 got received.
+Task #22's message to task 6 got received.
+Task #11 got message from task #27.
+Task #11 sent message to task #27.
+Task #11's message to task 27 got received.
+Task #20's message to task 4 got received.
+Task #27 got message from task #11.
+Task #22 got message from task #6.
+Task #30's message to task 14 got received.
+Task #30 got message from task #14.
+Task #14 got message from task #30.
+Task #14 sent message to task #30.
+Task #20 got message from task #4.
+Task #14's message to task 30 got received.
+Task #29 sent message to task #13.
+Task #29's message to task 13 got received.
+Task #13 got message from task #29.
+Task #13 sent message to task #29.
+Task #13's message to task 29 got received.
+Task #8 got message from task #24.
+Task #8 sent message to task #24.
+Task #8's message to task 24 got received.
+Task #29 got message from task #13.
+Task #7 got message from task #23.
+Task #7 sent message to task #23.
+Task #7's message to task 23 got received.
+Task #24's message to task 8 got received.
+Task #18 sent message to task #2.
+Task #23's message to task 7 got received.
+Task #5 got message from task #21.
+Task #5 sent message to task #21.
+Task #5's message to task 21 got received.
+Task #2 got message from task #18.
+Task #2 sent message to task #18.
+Task #2's message to task 18 got received.
+Task #24 got message from task #8.
+Task #21's message to task 5 got received.
+Task #18's message to task 2 got received.
+Task #21 got message from task #5.
+Task #23 got message from task #7.
+Task #18 got message from task #2.
+Task #19 sent message to task #3.
+Task #3 got message from task #19.
+Task #3 sent message to task #19.
+Task #3's message to task 19 got received.
+Task #19's message to task 3 got received.
+Task #19 got message from task #3.
+
+real	0m0.509s
+user	0m0.348s
+sys	0m0.188s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 64 -mca plm_rsh_no_tree_spawn 1 ex2
+Master is up.
+Task #32 sent message to task #0.
+Task #51 sent message to task #19.
+Task #0 got message from task #32.
+Task #0 sent message to task #32.
+Task #0's message to task 32 got received.
+Task #40 sent message to task #8.
+Task #32's message to task 0 got received.
+Task #63 sent message to task #31.
+Task #33 sent message to task #1.
+Task #1 got message from task #33.
+Task #1 sent message to task #33.
+Task #1's message to task 33 got received.
+Task #32 got message from task #0.
+Task #49 sent message to task #17.
+Task #33's message to task 1 got received.
+Task #45 sent message to task #13.
+Task #33 got message from task #1.
+Task #47 sent message to task #15.
+Task #59 sent message to task #27.
+Task #57 sent message to task #25.
+Task #44 sent message to task #12.
+Task #50 sent message to task #18.
+Task #52 sent message to task #20.
+Task #43 sent message to task #11.
+Task #46 sent message to task #14.
+Task #58 sent message to task #26.
+Task #55 sent message to task #23.
+Task #18 got message from task #50.
+Task #25 got message from task #57.
+Task #25 sent message to task #57.
+Task #25's message to task 57 got received.
+Task #17 got message from task #49.
+Task #31 got message from task #63.
+Task #31 sent message to task #63.
+Task #57's message to task 25 got received.
+Task #38 sent message to task #6.
+Task #31's message to task 63 got received.
+Task #55's message to task 23 got received.
+Task #27 got message from task #59.
+Task #59's message to task 27 got received.
+Task #27 sent message to task #59.
+Task #27's message to task 59 got received.
+Task #49's message to task 17 got received.
+Task #17 sent message to task #49.
+Task #52's message to task 20 got received.
+Task #48 sent message to task #16.
+Task #23 got message from task #55.
+Task #23 sent message to task #55.
+Task #63's message to task 31 got received.
+Task #17's message to task 49 got received.
+Task #50's message to task 18 got received.
+Task #23's message to task 55 got received.
+Task #57 got message from task #25.
+Task #20 got message from task #52.
+Task #20 sent message to task #52.
+Task #20's message to task 52 got received.
+Task #63 got message from task #31.
+Task #36 sent message to task #4.
+Task #18 sent message to task #50.
+Task #18's message to task 50 got received.
+Task #49 got message from task #17.
+Task #37 sent message to task #5.
+Task #19 got message from task #51.
+Task #19 sent message to task #51.
+Task #59 got message from task #27.
+Task #19's message to task 51 got received.
+Task #55 got message from task #23.
+Task #28 got message from task #60.
+Task #28 sent message to task #60.
+Task #28's message to task 60 got received.
+Task #52 got message from task #20.
+Task #39 sent message to task #7.
+Task #11 got message from task #43.
+Task #11 sent message to task #43.
+Task #11's message to task 43 got received.
+Task #29 got message from task #61.
+Task #50 got message from task #18.
+Task #12 got message from task #44.
+Task #12 sent message to task #44.
+Task #12's message to task 44 got received.
+Task #13 got message from task #45.
+Task #13 sent message to task #45.
+Task #13's message to task 45 got received.
+Task #4 got message from task #36.
+Task #4 sent message to task #36.
+Task #4's message to task 36 got received.
+Task #5 got message from task #37.
+Task #5 sent message to task #37.
+Task #5's message to task 37 got received.
+Task #6 got message from task #38.
+Task #6 sent message to task #38.
+Task #6's message to task 38 got received.
+Task #7 got message from task #39.
+Task #7 sent message to task #39.
+Task #7's message to task 39 got received.
+Task #29 sent message to task #61.
+Task #51's message to task 19 got received.
+Task #37's message to task 5 got received.
+Task #30 got message from task #62.
+Task #30 sent message to task #62.
+Task #51 got message from task #19.
+Task #43's message to task 11 got received.
+Task #45's message to task 13 got received.
+Task #30's message to task 62 got received.
+Task #54 sent message to task #22.
+Task #29's message to task 61 got received.
+Task #61 sent message to task #29.
+Task #36's message to task 4 got received.
+Task #22 got message from task #54.
+Task #22 sent message to task #54.
+Task #22's message to task 54 got received.
+Task #60 sent message to task #28.
+Task #44's message to task 12 got received.
+Task #24 got message from task #56.
+Task #24 sent message to task #56.
+Task #24's message to task 56 got received.
+Task #56 sent message to task #24.
+Task #38's message to task 6 got received.
+Task #26 got message from task #58.
+Task #26 sent message to task #58.
+Task #26's message to task 58 got received.
+Task #62 sent message to task #30.
+Task #45 got message from task #13.
+Task #60's message to task 28 got received.
+Task #61's message to task 29 got received.
+Task #60 got message from task #28.
+Task #21 got message from task #53.
+Task #21 sent message to task #53.
+Task #21's message to task 53 got received.
+Task #61 got message from task #29.
+Task #39's message to task 7 got received.
+Task #62's message to task 30 got received.
+Task #62 got message from task #30.
+Task #36 got message from task #4.
+Task #54's message to task 22 got received.
+Task #37 got message from task #5.
+Task #54 got message from task #22.
+Task #43 got message from task #11.
+Task #56's message to task 24 got received.
+Task #38 got message from task #6.
+Task #8 got message from task #40.
+Task #8 sent message to task #40.
+Task #8's message to task 40 got received.
+Task #56 got message from task #24.
+Task #44 got message from task #12.
+Task #58's message to task 26 got received.
+Task #39 got message from task #7.
+Task #58 got message from task #26.
+Task #53 sent message to task #21.
+Task #40's message to task 8 got received.
+Task #53's message to task 21 got received.
+Task #40 got message from task #8.
+Task #53 got message from task #21.
+Task #34 sent message to task #2.
+Task #41 sent message to task #9.
+Task #35 sent message to task #3.
+Task #42 sent message to task #10.
+Task #9 got message from task #41.
+Task #9 sent message to task #41.
+Task #9's message to task 41 got received.
+Task #15 got message from task #47.
+Task #15 sent message to task #47.
+Task #15's message to task 47 got received.
+Task #41's message to task 9 got received.
+Task #16 got message from task #48.
+Task #16 sent message to task #48.
+Task #16's message to task 48 got received.
+Task #41 got message from task #9.
+Task #2 got message from task #34.
+Task #2 sent message to task #34.
+Task #2's message to task 34 got received.
+Task #14 got message from task #46.
+Task #14 sent message to task #46.
+Task #14's message to task 46 got received.
+Task #34's message to task 2 got received.
+Task #48's message to task 16 got received.
+Task #47's message to task 15 got received.
+Task #46's message to task 14 got received.
+Task #10 got message from task #42.
+Task #10 sent message to task #42.
+Task #10's message to task 42 got received.
+Task #3 got message from task #35.
+Task #3 sent message to task #35.
+Task #3's message to task 35 got received.
+Task #48 got message from task #16.
+Task #47 got message from task #15.
+Task #34 got message from task #2.
+Task #46 got message from task #14.
+Task #42's message to task 10 got received.
+Task #35's message to task 3 got received.
+Task #42 got message from task #10.
+Task #35 got message from task #3.
+
+real	0m0.642s
+user	0m0.576s
+sys	0m0.444s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 128 -mca plm_rsh_no_tree_spawn 1 ex2
+Master is up.
+Task #65 sent message to task #1.
+Task #64 sent message to task #0.
+Task #72 sent message to task #8.
+Task #100 sent message to task #36.
+Task #104 sent message to task #40.
+Task #118 sent message to task #54.
+Task #114 sent message to task #50.
+Task #68 sent message to task #4.
+Task #101 sent message to task #37.
+Task #0 got message from task #64.
+Task #99 sent message to task #35.
+Task #0 sent message to task #64.
+Task #1 got message from task #65.
+Task #1 sent message to task #65.
+Task #1's message to task 65 got received.
+Task #116 sent message to task #52.
+Task #64's message to task 0 got received.
+Task #0's message to task 64 got received.
+Task #65's message to task 1 got received.
+Task #97 sent message to task #33.
+Task #81 sent message to task #17.
+Task #64 got message from task #0.
+Task #65 got message from task #1.
+Task #98 sent message to task #34.
+Task #109 sent message to task #45.
+Task #66 sent message to task #2.
+Task #122 sent message to task #58.
+Task #124 sent message to task #60.
+Task #67 sent message to task #3.
+Task #127 sent message to task #63.
+Task #111 sent message to task #47.
+Task #95 sent message to task #31.
+Task #119 sent message to task #55.
+Task #108 sent message to task #44.
+Task #125 sent message to task #61.
+Task #106 sent message to task #42.
+Task #76 sent message to task #12.
+Task #110 sent message to task #46.
+Task #120 sent message to task #56.
+Task #112 sent message to task #48.
+Task #115 sent message to task #51.
+Task #126 sent message to task #62.
+Task #123 sent message to task #59.
+Task #91 sent message to task #27.
+Task #115's message to task 51 got received.
+Task #51 got message from task #115.
+Task #123's message to task 59 got received.
+Task #37 got message from task #101.
+Task #112's message to task 48 got received.
+Task #122's message to task 58 got received.
+Task #48 got message from task #112.
+Task #48 sent message to task #112.
+Task #48's message to task 112 got received.
+Task #101's message to task 37 got received.
+Task #58 got message from task #122.
+Task #58 sent message to task #122.
+Task #58's message to task 122 got received.
+Task #98's message to task 34 got received.
+Task #59 got message from task #123.
+Task #106's message to task 42 got received.
+Task #118's message to task 54 got received.
+Task #116's message to task 52 got received.
+Task #93 sent message to task #29.
+Task #51 sent message to task #115.
+Task #75 sent message to task #11.
+Task #54 got message from task #118.
+Task #54 sent message to task #118.
+Task #54's message to task 118 got received.
+Task #63 got message from task #127.
+Task #63 sent message to task #127.
+Task #63's message to task 127 got received.
+Task #59 sent message to task #123.
+Task #37 sent message to task #101.
+Task #37's message to task 101 got received.
+Task #52 got message from task #116.
+Task #52 sent message to task #116.
+Task #51's message to task 115 got received.
+Task #56 got message from task #120.
+Task #36 got message from task #100.
+Task #36 sent message to task #100.
+Task #36's message to task 100 got received.
+Task #59's message to task 123 got received.
+Task #50 got message from task #114.
+Task #50 sent message to task #114.
+Task #50's message to task 114 got received.
+Task #46 got message from task #110.
+Task #46 sent message to task #110.
+Task #46's message to task 110 got received.
+Task #56 sent message to task #120.
+Task #52's message to task 116 got received.
+Task #61 got message from task #125.
+Task #114's message to task 50 got received.
+Task #56's message to task 120 got received.
+Task #127's message to task 63 got received.
+Task #61 sent message to task #125.
+Task #61's message to task 125 got received.
+Task #34 got message from task #98.
+Task #123 got message from task #59.
+Task #74 sent message to task #10.
+Task #34 sent message to task #98.
+Task #110's message to task 46 got received.
+Task #40 got message from task #104.
+Task #40 sent message to task #104.
+Task #40's message to task 104 got received.
+Task #112 got message from task #48.
+Task #100's message to task 36 got received.
+Task #34's message to task 98 got received.
+Task #101 got message from task #37.
+Task #120's message to task 56 got received.
+Task #115 got message from task #51.
+Task #118 got message from task #54.
+Task #122 got message from task #58.
+Task #125's message to task 61 got received.
+Task #125 got message from task #61.
+Task #80 sent message to task #16.
+Task #42 got message from task #106.
+Task #100 got message from task #36.
+Task #42 sent message to task #106.
+Task #114 got message from task #50.
+Task #42's message to task 106 got received.
+Task #127 got message from task #63.
+Task #110 got message from task #46.
+Task #120 got message from task #56.
+Task #116 got message from task #52.
+Task #108's message to task 44 got received.
+Task #104's message to task 40 got received.
+Task #98 got message from task #34.
+Task #104 got message from task #40.
+Task #106 got message from task #42.
+Task #44 got message from task #108.
+Task #44 sent message to task #108.
+Task #44's message to task 108 got received.
+Task #73 sent message to task #9.
+Task #108 got message from task #44.
+Task #121 sent message to task #57.
+Task #109's message to task 45 got received.
+Task #107 sent message to task #43.
+Task #78 sent message to task #14.
+Task #45 got message from task #109.
+Task #45 sent message to task #109.
+Task #45's message to task 109 got received.
+Task #47 got message from task #111.
+Task #47 sent message to task #111.
+Task #47's message to task 111 got received.
+Task #57 got message from task #121.
+Task #57 sent message to task #121.
+Task #57's message to task 121 got received.
+Task #60 got message from task #124.
+Task #60 sent message to task #124.
+Task #60's message to task 124 got received.
+Task #111's message to task 47 got received.
+Task #62 got message from task #126.
+Task #62 sent message to task #126.
+Task #62's message to task 126 got received.
+Task #119's message to task 55 got received.
+Task #121's message to task 57 got received.
+Task #124's message to task 60 got received.
+Task #121 got message from task #57.
+Task #82 sent message to task #18.
+Task #55 got message from task #119.
+Task #109 got message from task #45.
+Task #55 sent message to task #119.
+Task #111 got message from task #47.
+Task #124 got message from task #60.
+Task #126's message to task 62 got received.
+Task #126 got message from task #62.
+Task #119 got message from task #55.
+Task #55's message to task 119 got received.
+Task #105 sent message to task #41.
+Task #84 sent message to task #20.
+Task #113 sent message to task #49.
+Task #117 sent message to task #53.
+Task #107's message to task 43 got received.
+Task #117's message to task 53 got received.
+Task #71 sent message to task #7.
+Task #53 got message from task #117.
+Task #53 sent message to task #117.
+Task #53's message to task 117 got received.
+Task #49 got message from task #113.
+Task #49 sent message to task #113.
+Task #49's message to task 113 got received.
+Task #113's message to task 49 got received.
+Task #117 got message from task #53.
+Task #113 got message from task #49.
+Task #43 got message from task #107.
+Task #43 sent message to task #107.
+Task #43's message to task 107 got received.
+Task #86 sent message to task #22.
+Task #17 got message from task #81.
+Task #107 got message from task #43.
+Task #105's message to task 41 got received.
+Task #17 sent message to task #81.
+Task #27 got message from task #91.
+Task #27 sent message to task #91.
+Task #27's message to task 91 got received.
+Task #41 got message from task #105.
+Task #41 sent message to task #105.
+Task #41's message to task 105 got received.
+Task #2 got message from task #66.
+Task #16 got message from task #80.
+Task #16 sent message to task #80.
+Task #16's message to task 80 got received.
+Task #105 got message from task #41.
+Task #88 sent message to task #24.
+Task #17's message to task 81 got received.
+Task #31 got message from task #95.
+Task #31 sent message to task #95.
+Task #31's message to task 95 got received.
+Task #14 got message from task #78.
+Task #14 sent message to task #78.
+Task #14's message to task 78 got received.
+Task #2 sent message to task #66.
+Task #2's message to task 66 got received.
+Task #102 sent message to task #38.
+Task #90 sent message to task #26.
+Task #33 got message from task #97.
+Task #33 sent message to task #97.
+Task #33's message to task 97 got received.
+Task #10 got message from task #74.
+Task #10 sent message to task #74.
+Task #10's message to task 74 got received.
+Task #97's message to task 33 got received.
+Task #91's message to task 27 got received.
+Task #35 got message from task #99.
+Task #35 sent message to task #99.
+Task #35's message to task 99 got received.
+Task #8 got message from task #72.
+Task #8 sent message to task #72.
+Task #8's message to task 72 got received.
+Task #12 got message from task #76.
+Task #12 sent message to task #76.
+Task #12's message to task 76 got received.
+Task #99's message to task 35 got received.
+Task #3 got message from task #67.
+Task #3 sent message to task #67.
+Task #3's message to task 67 got received.
+Task #97 got message from task #33.
+Task #73's message to task 9 got received.
+Task #4 got message from task #68.
+Task #4 sent message to task #68.
+Task #4's message to task 68 got received.
+Task #99 got message from task #35.
+Task #80's message to task 16 got received.
+Task #103 sent message to task #39.
+Task #95's message to task 31 got received.
+Task #103's message to task 39 got received.
+Task #78's message to task 14 got received.
+Task #39 got message from task #103.
+Task #39 sent message to task #103.
+Task #39's message to task 103 got received.
+Task #103 got message from task #39.
+Task #67's message to task 3 got received.
+Task #38 got message from task #102.
+Task #38 sent message to task #102.
+Task #38's message to task 102 got received.
+Task #102's message to task 38 got received.
+Task #66's message to task 2 got received.
+Task #18 got message from task #82.
+Task #18 sent message to task #82.
+Task #18's message to task 82 got received.
+Task #72's message to task 8 got received.
+Task #74's message to task 10 got received.
+Task #102 got message from task #38.
+Task #91 got message from task #27.
+Task #79 sent message to task #15.
+Task #81's message to task 17 got received.
+Task #80 got message from task #16.
+Task #95 got message from task #31.
+Task #76's message to task 12 got received.
+Task #92 sent message to task #28.
+Task #67 got message from task #3.
+Task #72 got message from task #8.
+Task #68's message to task 4 got received.
+Task #87 sent message to task #23.
+Task #78 got message from task #14.
+Task #82's message to task 18 got received.
+Task #66 got message from task #2.
+Task #29 got message from task #93.
+Task #29 sent message to task #93.
+Task #29's message to task 93 got received.
+Task #94 sent message to task #30.
+Task #74 got message from task #10.
+Task #20 got message from task #84.
+Task #20 sent message to task #84.
+Task #20's message to task 84 got received.
+Task #93's message to task 29 got received.
+Task #76 got message from task #12.
+Task #89 sent message to task #25.
+Task #81 got message from task #17.
+Task #9 got message from task #73.
+Task #9 sent message to task #73.
+Task #9's message to task 73 got received.
+Task #28 got message from task #92.
+Task #28 sent message to task #92.
+Task #28's message to task 92 got received.
+Task #32 got message from task #96.
+Task #32 sent message to task #96.
+Task #32's message to task 96 got received.
+Task #6 got message from task #70.
+Task #6 sent message to task #70.
+Task #6's message to task 70 got received.
+Task #11 got message from task #75.
+Task #11 sent message to task #75.
+Task #11's message to task 75 got received.
+Task #30 got message from task #94.
+Task #30 sent message to task #94.
+Task #30's message to task 94 got received.
+Task #24 got message from task #88.
+Task #24 sent message to task #88.
+Task #24's message to task 88 got received.
+Task #25 got message from task #89.
+Task #25 sent message to task #89.
+Task #25's message to task 89 got received.
+Task #13 got message from task #77.
+Task #13 sent message to task #77.
+Task #13's message to task 77 got received.
+Task #26 got message from task #90.
+Task #26 sent message to task #90.
+Task #26's message to task 90 got received.
+Task #85 sent message to task #21.
+Task #5 got message from task #69.
+Task #5 sent message to task #69.
+Task #5's message to task 69 got received.
+Task #68 got message from task #4.
+Task #93 got message from task #29.
+Task #19 got message from task #83.
+Task #19 sent message to task #83.
+Task #19's message to task 83 got received.
+Task #22 got message from task #86.
+Task #22 sent message to task #86.
+Task #22's message to task 86 got received.
+Task #23 got message from task #87.
+Task #23 sent message to task #87.
+Task #23's message to task 87 got received.
+Task #15 got message from task #79.
+Task #15 sent message to task #79.
+Task #15's message to task 79 got received.
+Task #90's message to task 26 got received.
+Task #87's message to task 23 got received.
+Task #96 sent message to task #32.
+Task #96's message to task 32 got received.
+Task #79's message to task 15 got received.
+Task #92's message to task 28 got received.
+Task #82 got message from task #18.
+Task #69 sent message to task #5.
+Task #69's message to task 5 got received.
+Task #70 sent message to task #6.
+Task #70's message to task 6 got received.
+Task #84's message to task 20 got received.
+Task #84 got message from task #20.
+Task #73 got message from task #9.
+Task #75's message to task 11 got received.
+Task #89's message to task 25 got received.
+Task #77 sent message to task #13.
+Task #77's message to task 13 got received.
+Task #94's message to task 30 got received.
+Task #83 sent message to task #19.
+Task #83's message to task 19 got received.
+Task #7 got message from task #71.
+Task #7 sent message to task #71.
+Task #7's message to task 71 got received.
+Task #21 got message from task #85.
+Task #21 sent message to task #85.
+Task #21's message to task 85 got received.
+Task #75 got message from task #11.
+Task #89 got message from task #25.
+Task #77 got message from task #13.
+Task #94 got message from task #30.
+Task #71's message to task 7 got received.
+Task #71 got message from task #7.
+Task #85's message to task 21 got received.
+Task #85 got message from task #21.
+Task #86's message to task 22 got received.
+Task #86 got message from task #22.
+Task #88's message to task 24 got received.
+Task #88 got message from task #24.
+Task #90 got message from task #26.
+Task #87 got message from task #23.
+Task #83 got message from task #19.
+Task #96 got message from task #32.
+Task #79 got message from task #15.
+Task #92 got message from task #28.
+Task #69 got message from task #5.
+Task #70 got message from task #6.
+
+real	0m1.159s
+user	0m1.480s
+sys	0m1.224s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 256 -mca plm_rsh_no_tree_spawn 1 ex2
+Task #223 sent message to task #95.
+Task #242 sent message to task #114.
+Task #211 sent message to task #83.
+Task #235 sent message to task #107.
+Master is up.
+Task #243 sent message to task #115.
+Task #198 sent message to task #70.
+Task #128 sent message to task #0.
+Task #239 sent message to task #111.
+Task #226 sent message to task #98.
+Task #129 sent message to task #1.
+Task #246 sent message to task #118.
+Task #219 sent message to task #91.
+Task #218 sent message to task #90.
+Task #240 sent message to task #112.
+Task #221 sent message to task #93.
+Task #0 got message from task #128.
+Task #0 sent message to task #128.
+Task #0's message to task 128 got received.
+Task #128's message to task 0 got received.
+Task #236 sent message to task #108.
+Task #231 sent message to task #103.
+Task #233 sent message to task #105.
+Task #128 got message from task #0.
+Task #244 sent message to task #116.
+Task #230 sent message to task #102.
+Task #227 sent message to task #99.
+Task #200 sent message to task #72.
+Task #212 sent message to task #84.
+Task #202 sent message to task #74.
+Task #252 sent message to task #124.
+Task #209 sent message to task #81.
+Task #214 sent message to task #86.
+Task #206 sent message to task #78.
+Task #215 sent message to task #87.
+Task #237 sent message to task #109.
+Task #195 sent message to task #67.
+Task #129's message to task 1 got received.
+Task #197 sent message to task #69.
+Task #248 sent message to task #120.
+Task #249 sent message to task #121.
+Task #225 sent message to task #97.
+Task #201 sent message to task #73.
+Task #228 sent message to task #100.
+Task #216 sent message to task #88.
+Task #210 sent message to task #82.
+Task #224 sent message to task #96.
+Task #193 sent message to task #65.
+Task #250 sent message to task #122.
+Task #251 sent message to task #123.
+Task #255 sent message to task #127.
+Task #217 sent message to task #89.
+Task #247 sent message to task #119.
+Task #199 sent message to task #71.
+Task #112 got message from task #240.
+Task #72 got message from task #200.
+Task #234 sent message to task #106.
+Task #72 sent message to task #200.
+Task #91 got message from task #219.
+Task #91 sent message to task #219.
+Task #91's message to task 219 got received.
+Task #231's message to task 103 got received.
+Task #103 got message from task #231.
+Task #219's message to task 91 got received.
+Task #70 got message from task #198.
+Task #210's message to task 82 got received.
+Task #82 got message from task #210.
+Task #200's message to task 72 got received.
+Task #124 got message from task #252.
+Task #195's message to task 67 got received.
+Task #103 sent message to task #231.
+Task #236's message to task 108 got received.
+Task #74 got message from task #202.
+Task #74 sent message to task #202.
+Task #74's message to task 202 got received.
+Task #244's message to task 116 got received.
+Task #70 sent message to task #198.
+Task #225's message to task 97 got received.
+Task #72's message to task 200 got received.
+Task #243's message to task 115 got received.
+Task #100 got message from task #228.
+Task #100 sent message to task #228.
+Task #214's message to task 86 got received.
+Task #97 got message from task #225.
+Task #97 sent message to task #225.
+Task #97's message to task 225 got received.
+Task #218's message to task 90 got received.
+Task #116 got message from task #244.
+Task #235's message to task 107 got received.
+Task #124 sent message to task #252.
+Task #212's message to task 84 got received.
+Task #100's message to task 228 got received.
+Task #221's message to task 93 got received.
+Task #82 sent message to task #210.
+Task #1 got message from task #129.
+Task #1 sent message to task #129.
+Task #1's message to task 129 got received.
+Task #252's message to task 124 got received.
+Task #103's message to task 231 got received.
+Task #12 got message from task #140.
+Task #12 sent message to task #140.
+Task #228's message to task 100 got received.
+Task #86 got message from task #214.
+Task #11 got message from task #139.
+Task #11 sent message to task #139.
+Task #215's message to task 87 got received.
+Task #86 sent message to task #214.
+Task #86's message to task 214 got received.
+Task #2 got message from task #130.
+Task #2 sent message to task #130.
+Task #2's message to task 130 got received.
+Task #6 got message from task #134.
+Task #202's message to task 74 got received.
+Task #84 got message from task #212.
+Task #233's message to task 105 got received.
+Task #87 got message from task #215.
+Task #87 sent message to task #215.
+Task #87's message to task 215 got received.
+Task #9 got message from task #137.
+Task #9 sent message to task #137.
+Task #9's message to task 137 got received.
+Task #237's message to task 109 got received.
+Task #70's message to task 198 got received.
+Task #198's message to task 70 got received.
+Task #124's message to task 252 got received.
+Task #251's message to task 123 got received.
+Task #82's message to task 210 got received.
+Task #246's message to task 118 got received.
+Task #84 sent message to task #212.
+Task #239's message to task 111 got received.
+Task #107 got message from task #235.
+Task #107 sent message to task #235.
+Task #107's message to task 235 got received.
+Task #11's message to task 139 got received.
+Task #3 got message from task #131.
+Task #3 sent message to task #131.
+Task #3's message to task 131 got received.
+Task #4 got message from task #132.
+Task #4 sent message to task #132.
+Task #4's message to task 132 got received.
+Task #5 got message from task #133.
+Task #5 sent message to task #133.
+Task #5's message to task 133 got received.
+Task #7 got message from task #135.
+Task #7 sent message to task #135.
+Task #7's message to task 135 got received.
+Task #8 got message from task #136.
+Task #8 sent message to task #136.
+Task #8's message to task 136 got received.
+Task #6 sent message to task #134.
+Task #6's message to task 134 got received.
+Task #10 got message from task #138.
+Task #10 sent message to task #138.
+Task #10's message to task 138 got received.
+Task #12's message to task 140 got received.
+Task #219 got message from task #91.
+Task #116 sent message to task #244.
+Task #209's message to task 81 got received.
+Task #116's message to task 244 got received.
+Task #240's message to task 112 got received.
+Task #93 got message from task #221.
+Task #93 sent message to task #221.
+Task #93's message to task 221 got received.
+Task #248's message to task 120 got received.
+Task #99 got message from task #227.
+Task #99 sent message to task #227.
+Task #99's message to task 227 got received.
+Task #226's message to task 98 got received.
+Task #108 got message from task #236.
+Task #108 sent message to task #236.
+Task #108's message to task 236 got received.
+Task #211's message to task 83 got received.
+Task #83 got message from task #211.
+Task #212 got message from task #84.
+Task #90 got message from task #218.
+Task #90 sent message to task #218.
+Task #90's message to task 218 got received.
+Task #228 got message from task #100.
+Task #84's message to task 212 got received.
+Task #218 got message from task #90.
+Task #98 got message from task #226.
+Task #98 sent message to task #226.
+Task #98's message to task 226 got received.
+Task #202 got message from task #74.
+Task #102 got message from task #230.
+Task #254 sent message to task #126.
+Task #123 got message from task #251.
+Task #198 got message from task #70.
+Task #83 sent message to task #211.
+Task #194 sent message to task #66.
+Task #194's message to task 66 got received.
+Task #194 got message from task #66.
+Task #81 got message from task #209.
+Task #81 sent message to task #209.
+Task #81's message to task 209 got received.
+Task #200 got message from task #72.
+Task #65 got message from task #193.
+Task #65 sent message to task #193.
+Task #65's message to task 193 got received.
+Task #227's message to task 99 got received.
+Task #227 got message from task #99.
+Task #123 sent message to task #251.
+Task #244 got message from task #116.
+Task #78 got message from task #206.
+Task #78 sent message to task #206.
+Task #78's message to task 206 got received.
+Task #235 got message from task #107.
+Task #102 sent message to task #230.
+Task #203 sent message to task #75.
+Task #203's message to task 75 got received.
+Task #203 got message from task #75.
+Task #83's message to task 211 got received.
+Task #205 sent message to task #77.
+Task #205's message to task 77 got received.
+Task #205 got message from task #77.
+Task #102's message to task 230 got received.
+Task #221 got message from task #93.
+Task #123's message to task 251 got received.
+Task #210 got message from task #82.
+Task #112 sent message to task #240.
+Task #112's message to task 240 got received.
+Task #206's message to task 78 got received.
+Task #206 got message from task #78.
+Task #67 got message from task #195.
+Task #252 got message from task #124.
+Task #67 sent message to task #195.
+Task #67's message to task 195 got received.
+Task #231 got message from task #103.
+Task #115 got message from task #243.
+Task #222 sent message to task #94.
+Task #222's message to task 94 got received.
+Task #222 got message from task #94.
+Task #115 sent message to task #243.
+Task #115's message to task 243 got received.
+Task #233 got message from task #105.
+Task #111 got message from task #239.
+Task #196 sent message to task #68.
+Task #196's message to task 68 got received.
+Task #196 got message from task #68.
+Task #111 sent message to task #239.
+Task #225 got message from task #97.
+Task #111's message to task 239 got received.
+Task #247's message to task 119 got received.
+Task #247 got message from task #119.
+Task #117 got message from task #245.
+Task #204 sent message to task #76.
+Task #204's message to task 76 got received.
+Task #204 got message from task #76.
+Task #66 got message from task #194.
+Task #243 got message from task #115.
+Task #117 sent message to task #245.
+Task #207 sent message to task #79.
+Task #207's message to task 79 got received.
+Task #207 got message from task #79.
+Task #66 sent message to task #194.
+Task #208 sent message to task #80.
+Task #208's message to task 80 got received.
+Task #208 got message from task #80.
+Task #75 got message from task #203.
+Task #75 sent message to task #203.
+Task #75's message to task 203 got received.
+Task #216's message to task 88 got received.
+Task #216 got message from task #88.
+Task #126 got message from task #254.
+Task #242's message to task 114 got received.
+Task #242 got message from task #114.
+Task #117's message to task 245 got received.
+Task #213 sent message to task #85.
+Task #213's message to task 85 got received.
+Task #213 got message from task #85.
+Task #94 got message from task #222.
+Task #94 sent message to task #222.
+Task #94's message to task 222 got received.
+Task #255's message to task 127 got received.
+Task #255 got message from task #127.
+Task #114 got message from task #242.
+Task #114 sent message to task #242.
+Task #114's message to task 242 got received.
+Task #251 got message from task #123.
+Task #126 sent message to task #254.
+Task #220 sent message to task #92.
+Task #220's message to task 92 got received.
+Task #220 got message from task #92.
+Task #66's message to task 194 got received.
+Task #209 got message from task #81.
+Task #129 got message from task #1.
+Task #239 got message from task #111.
+Task #113 got message from task #241.
+Task #113 sent message to task #241.
+Task #113's message to task 241 got received.
+Task #249's message to task 121 got received.
+Task #249 got message from task #121.
+Task #69 got message from task #197.
+Task #69 sent message to task #197.
+Task #69's message to task 197 got received.
+Task #246 got message from task #118.
+Task #126's message to task 254 got received.
+Task #230's message to task 102 got received.
+Task #230 got message from task #102.
+Task #80 got message from task #208.
+Task #80 sent message to task #208.
+Task #80's message to task 208 got received.
+Task #201's message to task 73 got received.
+Task #201 got message from task #73.
+Task #85 got message from task #213.
+Task #85 sent message to task #213.
+Task #85's message to task 213 got received.
+Task #229 sent message to task #101.
+Task #229's message to task 101 got received.
+Task #229 got message from task #101.
+Task #88 got message from task #216.
+Task #88 sent message to task #216.
+Task #236 got message from task #108.
+Task #89 got message from task #217.
+Task #89 sent message to task #217.
+Task #89's message to task 217 got received.
+Task #195 got message from task #67.
+Task #73 got message from task #201.
+Task #73 sent message to task #201.
+Task #73's message to task 201 got received.
+Task #232 sent message to task #104.
+Task #232's message to task 104 got received.
+Task #232 got message from task #104.
+Task #79 got message from task #207.
+Task #234's message to task 106 got received.
+Task #234 got message from task #106.
+Task #79 sent message to task #207.
+Task #199's message to task 71 got received.
+Task #199 got message from task #71.
+Task #77 got message from task #205.
+Task #77 sent message to task #205.
+Task #77's message to task 205 got received.
+Task #226 got message from task #98.
+Task #88's message to task 216 got received.
+Task #211 got message from task #83.
+Task #79's message to task 207 got received.
+Task #96 got message from task #224.
+Task #96 sent message to task #224.
+Task #96's message to task 224 got received.
+Task #238 sent message to task #110.
+Task #238's message to task 110 got received.
+Task #238 got message from task #110.
+Task #237 got message from task #109.
+Task #92 got message from task #220.
+Task #92 sent message to task #220.
+Task #92's message to task 220 got received.
+Task #214 got message from task #86.
+Task #106 got message from task #234.
+Task #106 sent message to task #234.
+Task #106's message to task 234 got received.
+Task #241 sent message to task #113.
+Task #241's message to task 113 got received.
+Task #241 got message from task #113.
+Task #76 got message from task #204.
+Task #76 sent message to task #204.
+Task #76's message to task 204 got received.
+Task #223's message to task 95 got received.
+Task #71 got message from task #199.
+Task #71 sent message to task #199.
+Task #71's message to task 199 got received.
+Task #245 sent message to task #117.
+Task #245's message to task 117 got received.
+Task #245 got message from task #117.
+Task #68 got message from task #196.
+Task #68 sent message to task #196.
+Task #68's message to task 196 got received.
+Task #54 got message from task #182.
+Task #54 sent message to task #182.
+Task #54's message to task 182 got received.
+Task #55 got message from task #183.
+Task #55 sent message to task #183.
+Task #55's message to task 183 got received.
+Task #13 got message from task #141.
+Task #13 sent message to task #141.
+Task #13's message to task 141 got received.
+Task #14 got message from task #142.
+Task #14 sent message to task #142.
+Task #14's message to task 142 got received.
+Task #15 got message from task #143.
+Task #15 sent message to task #143.
+Task #15's message to task 143 got received.
+Task #16 got message from task #144.
+Task #16 sent message to task #144.
+Task #16's message to task 144 got received.
+Task #17 got message from task #145.
+Task #17 sent message to task #145.
+Task #17's message to task 145 got received.
+Task #20 got message from task #148.
+Task #20 sent message to task #148.
+Task #20's message to task 148 got received.
+Task #21 got message from task #149.
+Task #21 sent message to task #149.
+Task #21's message to task 149 got received.
+Task #22 got message from task #150.
+Task #22 sent message to task #150.
+Task #22's message to task 150 got received.
+Task #24 got message from task #152.
+Task #24 sent message to task #152.
+Task #24's message to task 152 got received.
+Task #25 got message from task #153.
+Task #25 sent message to task #153.
+Task #25's message to task 153 got received.
+Task #27 got message from task #155.
+Task #27 sent message to task #155.
+Task #27's message to task 155 got received.
+Task #28 got message from task #156.
+Task #28 sent message to task #156.
+Task #28's message to task 156 got received.
+Task #30 got message from task #158.
+Task #30 sent message to task #158.
+Task #30's message to task 158 got received.
+Task #31 got message from task #159.
+Task #31 sent message to task #159.
+Task #31's message to task 159 got received.
+Task #32 got message from task #160.
+Task #32 sent message to task #160.
+Task #32's message to task 160 got received.
+Task #33 got message from task #161.
+Task #33 sent message to task #161.
+Task #33's message to task 161 got received.
+Task #34 got message from task #162.
+Task #34 sent message to task #162.
+Task #34's message to task 162 got received.
+Task #35 got message from task #163.
+Task #35 sent message to task #163.
+Task #35's message to task 163 got received.
+Task #36 got message from task #164.
+Task #36 sent message to task #164.
+Task #36's message to task 164 got received.
+Task #37 got message from task #165.
+Task #37 sent message to task #165.
+Task #37's message to task 165 got received.
+Task #38 got message from task #166.
+Task #38 sent message to task #166.
+Task #38's message to task 166 got received.
+Task #39 got message from task #167.
+Task #39 sent message to task #167.
+Task #39's message to task 167 got received.
+Task #40 got message from task #168.
+Task #40 sent message to task #168.
+Task #40's message to task 168 got received.
+Task #41 got message from task #169.
+Task #41 sent message to task #169.
+Task #41's message to task 169 got received.
+Task #42 got message from task #170.
+Task #42 sent message to task #170.
+Task #42's message to task 170 got received.
+Task #43 got message from task #171.
+Task #43 sent message to task #171.
+Task #43's message to task 171 got received.
+Task #44 got message from task #172.
+Task #44 sent message to task #172.
+Task #44's message to task 172 got received.
+Task #45 got message from task #173.
+Task #45 sent message to task #173.
+Task #45's message to task 173 got received.
+Task #46 got message from task #174.
+Task #46 sent message to task #174.
+Task #46's message to task 174 got received.
+Task #47 got message from task #175.
+Task #47 sent message to task #175.
+Task #47's message to task 175 got received.
+Task #48 got message from task #176.
+Task #48 sent message to task #176.
+Task #48's message to task 176 got received.
+Task #49 got message from task #177.
+Task #49 sent message to task #177.
+Task #49's message to task 177 got received.
+Task #50 got message from task #178.
+Task #50 sent message to task #178.
+Task #50's message to task 178 got received.
+Task #51 got message from task #179.
+Task #51 sent message to task #179.
+Task #51's message to task 179 got received.
+Task #52 got message from task #180.
+Task #52 sent message to task #180.
+Task #52's message to task 180 got received.
+Task #248 got message from task #120.
+Task #105 got message from task #233.
+Task #26 got message from task #154.
+Task #26 sent message to task #154.
+Task #26's message to task 154 got received.
+Task #29 got message from task #157.
+Task #29 sent message to task #157.
+Task #29's message to task 157 got received.
+Task #217's message to task 89 got received.
+Task #217 got message from task #89.
+Task #105 sent message to task #233.
+Task #18 got message from task #146.
+Task #18 sent message to task #146.
+Task #18's message to task 146 got received.
+Task #197's message to task 69 got received.
+Task #197 got message from task #69.
+Task #105's message to task 233 got received.
+Task #19 got message from task #147.
+Task #19 sent message to task #147.
+Task #19's message to task 147 got received.
+Task #23 got message from task #151.
+Task #23 sent message to task #151.
+Task #23's message to task 151 got received.
+Task #240 got message from task #112.
+Task #118 got message from task #246.
+Task #53 got message from task #181.
+Task #193's message to task 65 got received.
+Task #193 got message from task #65.
+Task #101 got message from task #229.
+Task #101 sent message to task #229.
+Task #101's message to task 229 got received.
+Task #250's message to task 122 got received.
+Task #250 got message from task #122.
+Task #118 sent message to task #246.
+Task #118's message to task 246 got received.
+Task #53 sent message to task #181.
+Task #215 got message from task #87.
+Task #120 got message from task #248.
+Task #120 sent message to task #248.
+Task #120's message to task 248 got received.
+Task #53's message to task 181 got received.
+Task #253 sent message to task #125.
+Task #253's message to task 125 got received.
+Task #253 got message from task #125.
+Task #109 got message from task #237.
+Task #109 sent message to task #237.
+Task #109's message to task 237 got received.
+Task #254's message to task 126 got received.
+Task #254 got message from task #126.
+Task #121 got message from task #249.
+Task #121 sent message to task #249.
+Task #121's message to task 249 got received.
+Task #224's message to task 96 got received.
+Task #224 got message from task #96.
+Task #122 got message from task #250.
+Task #122 sent message to task #250.
+Task #122's message to task 250 got received.
+Task #223 got message from task #95.
+Task #127 got message from task #255.
+Task #127 sent message to task #255.
+Task #127's message to task 255 got received.
+Task #119 got message from task #247.
+Task #119 sent message to task #247.
+Task #119's message to task 247 got received.
+Task #125 got message from task #253.
+Task #125 sent message to task #253.
+Task #125's message to task 253 got received.
+Task #104 got message from task #232.
+Task #104 sent message to task #232.
+Task #104's message to task 232 got received.
+Task #95 got message from task #223.
+Task #95 sent message to task #223.
+Task #95's message to task 223 got received.
+Task #110 got message from task #238.
+Task #110 sent message to task #238.
+Task #110's message to task 238 got received.
+Task #57 got message from task #185.
+Task #57 sent message to task #185.
+Task #57's message to task 185 got received.
+Task #62 got message from task #190.
+Task #62 sent message to task #190.
+Task #62's message to task 190 got received.
+Task #61 got message from task #189.
+Task #61 sent message to task #189.
+Task #61's message to task 189 got received.
+Task #56 got message from task #184.
+Task #56 sent message to task #184.
+Task #56's message to task 184 got received.
+Task #63 got message from task #191.
+Task #63 sent message to task #191.
+Task #63's message to task 191 got received.
+Task #58 got message from task #186.
+Task #58 sent message to task #186.
+Task #58's message to task 186 got received.
+Task #64 got message from task #192.
+Task #64 sent message to task #192.
+Task #64's message to task 192 got received.
+Task #60 got message from task #188.
+Task #60 sent message to task #188.
+Task #60's message to task 188 got received.
+Task #59 got message from task #187.
+Task #59 sent message to task #187.
+Task #59's message to task 187 got received.
+Task #130 sent message to task #2.
+Task #130's message to task 2 got received.
+Task #130 got message from task #2.
+Task #131 sent message to task #3.
+Task #131's message to task 3 got received.
+Task #131 got message from task #3.
+Task #132 sent message to task #4.
+Task #132's message to task 4 got received.
+Task #132 got message from task #4.
+Task #133 sent message to task #5.
+Task #133's message to task 5 got received.
+Task #133 got message from task #5.
+Task #134 sent message to task #6.
+Task #134's message to task 6 got received.
+Task #134 got message from task #6.
+Task #135 sent message to task #7.
+Task #135's message to task 7 got received.
+Task #135 got message from task #7.
+Task #136 sent message to task #8.
+Task #136's message to task 8 got received.
+Task #136 got message from task #8.
+Task #137 sent message to task #9.
+Task #137's message to task 9 got received.
+Task #137 got message from task #9.
+Task #138 sent message to task #10.
+Task #138's message to task 10 got received.
+Task #138 got message from task #10.
+Task #139 sent message to task #11.
+Task #139's message to task 11 got received.
+Task #139 got message from task #11.
+Task #140 sent message to task #12.
+Task #140's message to task 12 got received.
+Task #140 got message from task #12.
+Task #141 sent message to task #13.
+Task #141's message to task 13 got received.
+Task #141 got message from task #13.
+Task #142 sent message to task #14.
+Task #142's message to task 14 got received.
+Task #142 got message from task #14.
+Task #143 sent message to task #15.
+Task #143's message to task 15 got received.
+Task #143 got message from task #15.
+Task #144 sent message to task #16.
+Task #144's message to task 16 got received.
+Task #144 got message from task #16.
+Task #145 sent message to task #17.
+Task #145's message to task 17 got received.
+Task #145 got message from task #17.
+Task #146 sent message to task #18.
+Task #146's message to task 18 got received.
+Task #146 got message from task #18.
+Task #147 sent message to task #19.
+Task #147's message to task 19 got received.
+Task #147 got message from task #19.
+Task #148 sent message to task #20.
+Task #148's message to task 20 got received.
+Task #148 got message from task #20.
+Task #149 sent message to task #21.
+Task #149's message to task 21 got received.
+Task #149 got message from task #21.
+Task #150 sent message to task #22.
+Task #150's message to task 22 got received.
+Task #150 got message from task #22.
+Task #151 sent message to task #23.
+Task #151's message to task 23 got received.
+Task #151 got message from task #23.
+Task #152 sent message to task #24.
+Task #152's message to task 24 got received.
+Task #152 got message from task #24.
+Task #153 sent message to task #25.
+Task #153's message to task 25 got received.
+Task #153 got message from task #25.
+Task #154 sent message to task #26.
+Task #154's message to task 26 got received.
+Task #154 got message from task #26.
+Task #155 sent message to task #27.
+Task #155's message to task 27 got received.
+Task #155 got message from task #27.
+Task #156 sent message to task #28.
+Task #156's message to task 28 got received.
+Task #156 got message from task #28.
+Task #157 sent message to task #29.
+Task #157's message to task 29 got received.
+Task #157 got message from task #29.
+Task #158 sent message to task #30.
+Task #158's message to task 30 got received.
+Task #158 got message from task #30.
+Task #159 sent message to task #31.
+Task #159's message to task 31 got received.
+Task #159 got message from task #31.
+Task #160 sent message to task #32.
+Task #160's message to task 32 got received.
+Task #160 got message from task #32.
+Task #161 sent message to task #33.
+Task #161's message to task 33 got received.
+Task #161 got message from task #33.
+Task #162 sent message to task #34.
+Task #162's message to task 34 got received.
+Task #162 got message from task #34.
+Task #163 sent message to task #35.
+Task #163's message to task 35 got received.
+Task #163 got message from task #35.
+Task #164 sent message to task #36.
+Task #164's message to task 36 got received.
+Task #164 got message from task #36.
+Task #165 sent message to task #37.
+Task #165's message to task 37 got received.
+Task #165 got message from task #37.
+Task #166 sent message to task #38.
+Task #166's message to task 38 got received.
+Task #166 got message from task #38.
+Task #167 sent message to task #39.
+Task #167's message to task 39 got received.
+Task #167 got message from task #39.
+Task #168 sent message to task #40.
+Task #168's message to task 40 got received.
+Task #168 got message from task #40.
+Task #169 sent message to task #41.
+Task #169's message to task 41 got received.
+Task #169 got message from task #41.
+Task #170 sent message to task #42.
+Task #170's message to task 42 got received.
+Task #170 got message from task #42.
+Task #171 sent message to task #43.
+Task #171's message to task 43 got received.
+Task #171 got message from task #43.
+Task #172 sent message to task #44.
+Task #172's message to task 44 got received.
+Task #172 got message from task #44.
+Task #173 sent message to task #45.
+Task #173's message to task 45 got received.
+Task #173 got message from task #45.
+Task #174 sent message to task #46.
+Task #174's message to task 46 got received.
+Task #174 got message from task #46.
+Task #175 sent message to task #47.
+Task #175's message to task 47 got received.
+Task #175 got message from task #47.
+Task #176 sent message to task #48.
+Task #176's message to task 48 got received.
+Task #176 got message from task #48.
+Task #177 sent message to task #49.
+Task #177's message to task 49 got received.
+Task #177 got message from task #49.
+Task #178 sent message to task #50.
+Task #178's message to task 50 got received.
+Task #178 got message from task #50.
+Task #179 sent message to task #51.
+Task #179's message to task 51 got received.
+Task #179 got message from task #51.
+Task #180 sent message to task #52.
+Task #180's message to task 52 got received.
+Task #180 got message from task #52.
+Task #181 sent message to task #53.
+Task #181's message to task 53 got received.
+Task #181 got message from task #53.
+Task #182 sent message to task #54.
+Task #182's message to task 54 got received.
+Task #182 got message from task #54.
+Task #183 sent message to task #55.
+Task #183's message to task 55 got received.
+Task #183 got message from task #55.
+Task #184 sent message to task #56.
+Task #184's message to task 56 got received.
+Task #184 got message from task #56.
+Task #185 sent message to task #57.
+Task #185's message to task 57 got received.
+Task #185 got message from task #57.
+Task #186 sent message to task #58.
+Task #186's message to task 58 got received.
+Task #186 got message from task #58.
+Task #187 sent message to task #59.
+Task #187's message to task 59 got received.
+Task #187 got message from task #59.
+Task #188 sent message to task #60.
+Task #188's message to task 60 got received.
+Task #188 got message from task #60.
+Task #189 sent message to task #61.
+Task #189's message to task 61 got received.
+Task #189 got message from task #61.
+Task #190 sent message to task #62.
+Task #190's message to task 62 got received.
+Task #190 got message from task #62.
+Task #191 sent message to task #63.
+Task #191's message to task 63 got received.
+Task #191 got message from task #63.
+Task #192 sent message to task #64.
+Task #192's message to task 64 got received.
+Task #192 got message from task #64.
+
+real	0m3.085s
+user	0m5.392s
+sys	0m4.080s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ 
+

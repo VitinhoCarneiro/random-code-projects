@@ -1,0 +1,1273 @@
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    12520.31 / 11452.97 / 1274.86 
+   OVERALL AVERAGES:          12520.31 / 11452.97 / 1274.86 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13865.47 / 13184.50 / 3847.99 
+   OVERALL AVERAGES:          13865.47 / 13184.50 / 3847.99 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14298.76 / 13574.82 / 7049.25 
+   OVERALL AVERAGES:          14298.76 / 13574.82 / 7049.25 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14278.48 / 13616.78 / 6202.30 
+   OVERALL AVERAGES:          14278.48 / 13616.78 / 6202.30 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15196.75 / 12576.40 / 6241.52 
+   OVERALL AVERAGES:          15196.75 / 12576.40 / 6241.52 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 14659.46 / 5172.83 
+   OVERALL AVERAGES:          15391.94 / 14659.46 / 5172.83 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15575.66 / 14961.98 / 7451.81 
+   OVERALL AVERAGES:          15575.66 / 14961.98 / 7451.81 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15716.36 / 13952.29 / 1607.78 
+   OVERALL AVERAGES:          15716.36 / 13952.29 / 1607.78 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15794.45 / 15264.32 / 5373.49 
+   OVERALL AVERAGES:          15794.45 / 15264.32 / 5373.49 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15887.52 / 14913.02 / 9436.00 
+   OVERALL AVERAGES:          15887.52 / 14913.02 / 9436.00 
+
+
+real	0m0.129s
+user	0m0.208s
+sys	0m0.020s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    12520.31 / 11495.53 / 1235.44 
+   OVERALL AVERAGES:          12520.31 / 11495.53 / 1235.44 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13865.47 / 12945.96 / 3309.12 
+   OVERALL AVERAGES:          13865.47 / 12945.96 / 3309.12 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14298.76 / 13628.15 / 6746.87 
+   OVERALL AVERAGES:          14298.76 / 13628.15 / 6746.87 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14847.09 / 14215.48 / 5716.26 
+   OVERALL AVERAGES:          14847.09 / 14215.48 / 5716.26 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15141.89 / 13095.81 / 5343.06 
+   OVERALL AVERAGES:          15141.89 / 13095.81 / 5343.06 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 13429.94 / 4510.00 
+   OVERALL AVERAGES:          15391.94 / 13429.94 / 4510.00 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15412.14 / 14880.99 / 8978.63 
+   OVERALL AVERAGES:          15412.14 / 14880.99 / 8978.63 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15534.46 / 14429.71 / 6477.69 
+   OVERALL AVERAGES:          15534.46 / 14429.71 / 6477.69 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15663.38 / 14552.54 / 1451.60 
+   OVERALL AVERAGES:          15663.38 / 14552.54 / 1451.60 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15768.06 / 15181.40 / 9799.78 
+   OVERALL AVERAGES:          15768.06 / 15181.40 / 9799.78 
+
+
+real	0m0.127s
+user	0m0.208s
+sys	0m0.012s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    11814.94 / 11091.71 / 1851.79 
+   OVERALL AVERAGES:          11814.94 / 11091.71 / 1851.79 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13421.77 / 12817.71 / 6657.63 
+   OVERALL AVERAGES:          13421.77 / 12817.71 / 6657.63 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13981.01 / 13552.83 / 7695.97 
+   OVERALL AVERAGES:          13981.01 / 13552.83 / 7695.97 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14781.69 / 13356.07 / 4971.03 
+   OVERALL AVERAGES:          14781.69 / 13356.07 / 4971.03 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14926.35 / 13790.62 / 4804.47 
+   OVERALL AVERAGES:          14926.35 / 13790.62 / 4804.47 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15205.94 / 13261.26 / 5406.19 
+   OVERALL AVERAGES:          15205.94 / 13261.26 / 5406.19 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15534.46 / 15086.32 / 9089.82 
+   OVERALL AVERAGES:          15534.46 / 15086.32 / 9089.82 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15534.46 / 14371.61 / 7302.38 
+   OVERALL AVERAGES:          15534.46 / 14371.61 / 7302.38 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15663.38 / 14280.83 / 1438.87 
+   OVERALL AVERAGES:          15663.38 / 14280.83 / 1438.87 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15857.48 / 15110.54 / 10155.70 
+   OVERALL AVERAGES:          15857.48 / 15110.54 / 10155.70 
+
+
+real	0m0.128s
+user	0m0.200s
+sys	0m0.020s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    11814.94 / 11397.11 / 1711.96 
+   OVERALL AVERAGES:          11814.94 / 11397.11 / 1711.96 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13421.77 / 12961.09 / 7139.24 
+   OVERALL AVERAGES:          13421.77 / 12961.09 / 7139.24 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13677.08 / 13523.70 / 8333.05 
+   OVERALL AVERAGES:          13677.08 / 13523.70 / 8333.05 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14339.50 / 14026.86 / 10652.20 
+   OVERALL AVERAGES:          14339.50 / 14026.86 / 10652.20 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14926.35 / 13254.70 / 3184.74 
+   OVERALL AVERAGES:          14926.35 / 13254.70 / 3184.74 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 13836.19 / 8278.23 
+   OVERALL AVERAGES:          15391.94 / 13836.19 / 8278.23 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15575.66 / 15016.75 / 9033.89 
+   OVERALL AVERAGES:          15575.66 / 15016.75 / 9033.89 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15534.46 / 14736.76 / 9754.20 
+   OVERALL AVERAGES:          15534.46 / 14736.76 / 9754.20 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15663.38 / 14115.39 / 6339.00 
+   OVERALL AVERAGES:          15663.38 / 14115.39 / 6339.00 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15768.06 / 15275.69 / 9521.69 
+   OVERALL AVERAGES:          15768.06 / 15275.69 / 9521.69 
+
+
+real	0m0.129s
+user	0m0.204s
+sys	0m0.016s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    11184.81 / 10717.60 / 1242.76 
+   OVERALL AVERAGES:          11184.81 / 10717.60 / 1242.76 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    12905.55 / 12310.68 / 6056.76 
+   OVERALL AVERAGES:          12905.55 / 12310.68 / 6056.76 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13386.08 / 13052.68 / 6894.75 
+   OVERALL AVERAGES:          13386.08 / 13052.68 / 6894.75 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14847.09 / 13618.20 / 9532.51 
+   OVERALL AVERAGES:          14847.09 / 13618.20 / 9532.51 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15141.89 / 12757.35 / 3483.64 
+   OVERALL AVERAGES:          15141.89 / 12757.35 / 3483.64 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 14419.12 / 8516.35 
+   OVERALL AVERAGES:          15391.94 / 14419.12 / 8516.35 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15575.66 / 14952.91 / 9918.96 
+   OVERALL AVERAGES:          15575.66 / 14952.91 / 9918.96 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15716.36 / 13626.21 / 5928.34 
+   OVERALL AVERAGES:          15716.36 / 13626.21 / 5928.34 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15794.45 / 15230.65 / 8454.36 
+   OVERALL AVERAGES:          15794.45 / 15230.65 / 8454.36 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15887.52 / 15024.79 / 10356.31 
+   OVERALL AVERAGES:          15887.52 / 15024.79 / 10356.31 
+
+
+real	0m0.128s
+user	0m0.196s
+sys	0m0.024s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    12520.31 / 11537.58 / 1235.44 
+   OVERALL AVERAGES:          12520.31 / 11537.58 / 1235.44 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13865.47 / 13124.90 / 3445.01 
+   OVERALL AVERAGES:          13865.47 / 13124.90 / 3445.01 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14298.76 / 13590.25 / 4839.58 
+   OVERALL AVERAGES:          14298.76 / 13590.25 / 4839.58 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14847.09 / 14424.67 / 6202.30 
+   OVERALL AVERAGES:          14847.09 / 14424.67 / 6202.30 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15141.89 / 13350.97 / 4650.00 
+   OVERALL AVERAGES:          15141.89 / 13350.97 / 4650.00 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 13883.21 / 2234.98 
+   OVERALL AVERAGES:          15391.94 / 13883.21 / 2234.98 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15575.66 / 15132.65 / 9395.24 
+   OVERALL AVERAGES:          15575.66 / 15132.65 / 9395.24 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15679.64 / 14603.88 / 7278.62 
+   OVERALL AVERAGES:          15679.64 / 14603.88 / 7278.62 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15794.45 / 14682.81 / 1565.36 
+   OVERALL AVERAGES:          15794.45 / 14682.81 / 1565.36 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15768.06 / 14592.06 / 9425.40 
+   OVERALL AVERAGES:          15768.06 / 14592.06 / 9425.40 
+
+
+real	0m0.129s
+user	0m0.200s
+sys	0m0.028s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    12520.31 / 11431.53 / 1047.27 
+   OVERALL AVERAGES:          12520.31 / 11431.53 / 1047.27 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13421.77 / 12828.08 / 2814.97 
+   OVERALL AVERAGES:          13421.77 / 12828.08 / 2814.97 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14298.76 / 13484.32 / 5655.24 
+   OVERALL AVERAGES:          14298.76 / 13484.32 / 5655.24 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14588.88 / 14102.36 / 7839.82 
+   OVERALL AVERAGES:          14588.88 / 14102.36 / 7839.82 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14716.86 / 13475.98 / 4405.78 
+   OVERALL AVERAGES:          14716.86 / 13475.98 / 4405.78 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 13901.62 / 5429.52 
+   OVERALL AVERAGES:          15391.94 / 13901.62 / 5429.52 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15575.66 / 14719.90 / 9089.82 
+   OVERALL AVERAGES:          15575.66 / 14719.90 / 9089.82 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15679.64 / 14592.19 / 9586.98 
+   OVERALL AVERAGES:          15679.64 / 14592.19 / 9586.98 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15794.45 / 13901.32 / 2496.61 
+   OVERALL AVERAGES:          15794.45 / 13901.32 / 2496.61 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15768.06 / 15160.48 / 10155.70 
+   OVERALL AVERAGES:          15768.06 / 15160.48 / 10155.70 
+
+
+real	0m0.128s
+user	0m0.192s
+sys	0m0.024s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    12520.31 / 11507.07 / 1242.76 
+   OVERALL AVERAGES:          12520.31 / 11507.07 / 1242.76 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13865.47 / 12540.35 / 3101.15 
+   OVERALL AVERAGES:          13865.47 / 12540.35 / 3101.15 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13981.01 / 13510.37 / 6820.01 
+   OVERALL AVERAGES:          13981.01 / 13510.37 / 6820.01 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14588.88 / 13994.00 / 11570.49 
+   OVERALL AVERAGES:          14588.88 / 13994.00 / 11570.49 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14926.35 / 14113.62 / 4854.52 
+   OVERALL AVERAGES:          14926.35 / 14113.62 / 4854.52 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15205.94 / 13239.10 / 6519.64 
+   OVERALL AVERAGES:          15205.94 / 13239.10 / 6519.64 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15412.14 / 14856.72 / 9089.82 
+   OVERALL AVERAGES:          15412.14 / 14856.72 / 9089.82 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15534.46 / 14533.38 / 8935.93 
+   OVERALL AVERAGES:          15534.46 / 14533.38 / 8935.93 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15663.38 / 14171.90 / 2496.61 
+   OVERALL AVERAGES:          15663.38 / 14171.90 / 2496.61 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15768.06 / 15286.39 / 10155.70 
+   OVERALL AVERAGES:          15768.06 / 15286.39 / 10155.70 
+
+
+real	0m0.126s
+user	0m0.188s
+sys	0m0.028s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    11814.94 / 11348.11 / 1740.38 
+   OVERALL AVERAGES:          11814.94 / 11348.11 / 1740.38 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13751.82 / 12789.04 / 4877.10 
+   OVERALL AVERAGES:          13751.82 / 12789.04 / 4877.10 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13981.01 / 13601.16 / 7231.56 
+   OVERALL AVERAGES:          13981.01 / 13601.16 / 7231.56 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14847.09 / 14191.30 / 8008.22 
+   OVERALL AVERAGES:          14847.09 / 14191.30 / 8008.22 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15196.75 / 14154.28 / 4382.76 
+   OVERALL AVERAGES:          15196.75 / 14154.28 / 4382.76 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 12977.33 / 4579.77 
+   OVERALL AVERAGES:          15391.94 / 12977.33 / 4579.77 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15575.66 / 14529.57 / 7404.82 
+   OVERALL AVERAGES:          15575.66 / 14529.57 / 7404.82 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15679.64 / 14869.30 / 7803.36 
+   OVERALL AVERAGES:          15679.64 / 14869.30 / 7803.36 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15794.45 / 14272.88 / 1500.05 
+   OVERALL AVERAGES:          15794.45 / 14272.88 / 1500.05 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15768.06 / 15179.54 / 10058.28 
+   OVERALL AVERAGES:          15768.06 / 15179.54 / 10058.28 
+
+
+real	0m0.125s
+user	0m0.204s
+sys	0m0.012s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    11814.94 / 10943.09 / 1429.06 
+   OVERALL AVERAGES:          11814.94 / 10943.09 / 1429.06 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13315.25 / 12863.59 / 4934.48 
+   OVERALL AVERAGES:          13315.25 / 12863.59 / 4934.48 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    13903.77 / 13210.79 / 3824.59 
+   OVERALL AVERAGES:          13903.77 / 13210.79 / 3824.59 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    14588.88 / 11824.14 / 5917.89 
+   OVERALL AVERAGES:          14588.88 / 11824.14 / 5917.89 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15196.75 / 14521.61 / 9078.58 
+   OVERALL AVERAGES:          15196.75 / 14521.61 / 9078.58 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15391.94 / 14818.83 / 8516.35 
+   OVERALL AVERAGES:          15391.94 / 14818.83 / 8516.35 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15575.66 / 14586.47 / 9089.82 
+   OVERALL AVERAGES:          15575.66 / 14586.47 / 9089.82 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15716.36 / 14020.29 / 1800.13 
+   OVERALL AVERAGES:          15716.36 / 14020.29 / 1800.13 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15794.45 / 15277.12 / 9085.14 
+   OVERALL AVERAGES:          15794.45 / 15277.12 / 9085.14 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    15857.48 / 13817.23 / 1344.97 
+   OVERALL AVERAGES:          15857.48 / 13817.23 / 1344.97 
+
+
+real	0m0.137s
+user	0m0.212s
+sys	0m0.016s
+
+
+
+
+
+
+
+
+
+
+
+
+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ for i in `seq 10`; do time mpirun --hostfile hostnames -np 2 --bynode -mca plm_rsh_no_tree_spawn 1 mpi_bandwidth; done
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    84.38 / 79.87 / 67.98 
+   OVERALL AVERAGES:          84.38 / 79.87 / 67.98 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    100.60 / 95.89 / 91.18 
+   OVERALL AVERAGES:          100.60 / 95.89 / 91.18 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    106.44 / 103.60 / 101.83 
+   OVERALL AVERAGES:          106.44 / 103.60 / 101.83 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.52 / 107.91 / 106.66 
+   OVERALL AVERAGES:          108.52 / 107.91 / 106.66 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.03 / 110.71 / 108.21 
+   OVERALL AVERAGES:          111.03 / 110.71 / 108.21 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.10 / 108.27 / 19.88 
+   OVERALL AVERAGES:          112.10 / 108.27 / 19.88 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.17 / 108.66 / 6.53 
+   OVERALL AVERAGES:          112.17 / 108.66 / 6.53 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.24 / 111.96 / 111.41 
+   OVERALL AVERAGES:          112.24 / 111.96 / 111.41 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.63 / 112.94 / 110.46 
+   OVERALL AVERAGES:          113.63 / 112.94 / 110.46 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.32 / 113.80 / 112.55 
+   OVERALL AVERAGES:          114.32 / 113.80 / 112.55 
+
+
+real	0m10.866s
+user	0m5.196s
+sys	0m5.384s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    89.13 / 62.06 / 0.97 
+   OVERALL AVERAGES:          89.13 / 62.06 / 0.97 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    102.09 / 88.48 / 1.92 
+   OVERALL AVERAGES:          102.09 / 88.48 / 1.92 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    105.71 / 103.77 / 100.62 
+   OVERALL AVERAGES:          105.71 / 103.77 / 100.62 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.12 / 107.97 / 106.09 
+   OVERALL AVERAGES:          108.12 / 107.97 / 106.09 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.35 / 110.20 / 107.89 
+   OVERALL AVERAGES:          111.35 / 110.20 / 107.89 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.99 / 103.23 / 5.59 
+   OVERALL AVERAGES:          111.99 / 103.23 / 5.59 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.54 / 110.72 / 109.92 
+   OVERALL AVERAGES:          111.54 / 110.72 / 109.92 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.44 / 111.96 / 111.43 
+   OVERALL AVERAGES:          112.44 / 111.96 / 111.43 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.62 / 112.98 / 110.53 
+   OVERALL AVERAGES:          113.62 / 112.98 / 110.53 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.10 / 113.79 / 112.42 
+   OVERALL AVERAGES:          114.10 / 113.79 / 112.42 
+
+
+real	0m16.731s
+user	0m8.176s
+sys	0m8.300s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    85.07 / 67.21 / 0.97 
+   OVERALL AVERAGES:          85.07 / 67.21 / 0.97 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    99.38 / 78.74 / 1.92 
+   OVERALL AVERAGES:          99.38 / 78.74 / 1.92 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    104.68 / 91.74 / 2.87 
+   OVERALL AVERAGES:          104.68 / 91.74 / 2.87 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.09 / 106.85 / 3.85 
+   OVERALL AVERAGES:          108.09 / 106.85 / 3.85 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    110.98 / 109.25 / 4.69 
+   OVERALL AVERAGES:          110.98 / 109.25 / 4.69 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.24 / 98.01 / 5.59 
+   OVERALL AVERAGES:          111.24 / 98.01 / 5.59 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.37 / 104.40 / 6.50 
+   OVERALL AVERAGES:          111.37 / 104.40 / 6.50 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.25 / 110.92 / 7.37 
+   OVERALL AVERAGES:          112.25 / 110.92 / 7.37 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.27 / 111.94 / 8.21 
+   OVERALL AVERAGES:          113.27 / 111.94 / 8.21 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.93 / 113.81 / 113.22 
+   OVERALL AVERAGES:          113.93 / 113.81 / 113.22 
+
+
+real	0m23.503s
+user	0m11.560s
+sys	0m11.652s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    87.22 / 78.71 / 0.97 
+   OVERALL AVERAGES:          87.22 / 78.71 / 0.97 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    97.56 / 96.69 / 92.51 
+   OVERALL AVERAGES:          97.56 / 96.69 / 92.51 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    105.08 / 103.99 / 100.89 
+   OVERALL AVERAGES:          105.08 / 103.99 / 100.89 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.39 / 107.96 / 107.01 
+   OVERALL AVERAGES:          108.39 / 107.96 / 107.01 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.15 / 110.88 / 109.77 
+   OVERALL AVERAGES:          111.15 / 110.88 / 109.77 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.84 / 107.28 / 5.64 
+   OVERALL AVERAGES:          112.84 / 107.28 / 5.64 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.46 / 102.13 / 6.48 
+   OVERALL AVERAGES:          111.46 / 102.13 / 6.48 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.76 / 110.85 / 7.43 
+   OVERALL AVERAGES:          112.76 / 110.85 / 7.43 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.26 / 112.99 / 112.38 
+   OVERALL AVERAGES:          113.26 / 112.99 / 112.38 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.06 / 113.81 / 112.85 
+   OVERALL AVERAGES:          114.06 / 113.81 / 112.85 
+
+
+real	0m13.161s
+user	0m6.228s
+sys	0m6.656s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    86.73 / 79.28 / 0.98 
+   OVERALL AVERAGES:          86.73 / 79.28 / 0.98 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    98.40 / 96.72 / 94.28 
+   OVERALL AVERAGES:          98.40 / 96.72 / 94.28 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    104.22 / 103.96 / 102.30 
+   OVERALL AVERAGES:          104.22 / 103.96 / 102.30 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.47 / 107.93 / 107.09 
+   OVERALL AVERAGES:          108.47 / 107.93 / 107.09 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.00 / 110.47 / 107.05 
+   OVERALL AVERAGES:          111.00 / 110.47 / 107.05 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.08 / 59.75 / 2.89 
+   OVERALL AVERAGES:          111.08 / 59.75 / 2.89 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.87 / 81.16 / 6.47 
+   OVERALL AVERAGES:          111.87 / 81.16 / 6.47 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.00 / 100.27 / 7.33 
+   OVERALL AVERAGES:          112.00 / 100.27 / 7.33 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.07 / 111.88 / 8.33 
+   OVERALL AVERAGES:          113.07 / 111.88 / 8.33 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.03 / 113.82 / 112.44 
+   OVERALL AVERAGES:          114.03 / 113.82 / 112.44 
+
+
+real	0m27.842s
+user	0m13.432s
+sys	0m14.164s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    82.31 / 39.99 / 0.49 
+   OVERALL AVERAGES:          82.31 / 39.99 / 0.49 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    98.28 / 70.65 / 0.98 
+   OVERALL AVERAGES:          98.28 / 70.65 / 0.98 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    104.62 / 96.85 / 2.87 
+   OVERALL AVERAGES:          104.62 / 96.85 / 2.87 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.09 / 107.93 / 106.66 
+   OVERALL AVERAGES:          108.09 / 107.93 / 106.66 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.18 / 109.38 / 4.70 
+   OVERALL AVERAGES:          111.18 / 109.38 / 4.70 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.71 / 101.92 / 5.61 
+   OVERALL AVERAGES:          112.71 / 101.92 / 5.61 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.39 / 104.26 / 6.47 
+   OVERALL AVERAGES:          112.39 / 104.26 / 6.47 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.51 / 106.72 / 7.34 
+   OVERALL AVERAGES:          112.51 / 106.72 / 7.34 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.26 / 112.99 / 112.23 
+   OVERALL AVERAGES:          113.26 / 112.99 / 112.23 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.11 / 112.78 / 9.19 
+   OVERALL AVERAGES:          114.11 / 112.78 / 9.19 
+
+
+real	0m31.816s
+user	0m15.488s
+sys	0m16.032s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    85.66 / 59.33 / 0.97 
+   OVERALL AVERAGES:          85.66 / 59.33 / 0.97 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    99.36 / 82.83 / 1.92 
+   OVERALL AVERAGES:          99.36 / 82.83 / 1.92 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    104.15 / 102.90 / 2.87 
+   OVERALL AVERAGES:          104.15 / 102.90 / 2.87 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.45 / 107.96 / 104.77 
+   OVERALL AVERAGES:          108.45 / 107.96 / 104.77 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    110.60 / 109.39 / 10.67 
+   OVERALL AVERAGES:          110.60 / 109.39 / 10.67 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.91 / 88.53 / 5.60 
+   OVERALL AVERAGES:          111.91 / 88.53 / 5.60 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.96 / 100.69 / 6.50 
+   OVERALL AVERAGES:          111.96 / 100.69 / 6.50 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.50 / 109.96 / 16.50 
+   OVERALL AVERAGES:          112.50 / 109.96 / 16.50 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.31 / 110.88 / 8.21 
+   OVERALL AVERAGES:          113.31 / 110.88 / 8.21 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.11 / 113.75 / 112.61 
+   OVERALL AVERAGES:          114.11 / 113.75 / 112.61 
+
+
+real	0m24.627s
+user	0m12.068s
+sys	0m12.288s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    84.71 / 44.85 / 0.49 
+   OVERALL AVERAGES:          84.71 / 44.85 / 0.49 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    97.80 / 62.71 / 0.98 
+   OVERALL AVERAGES:          97.80 / 62.71 / 0.98 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    105.26 / 96.95 / 2.87 
+   OVERALL AVERAGES:          105.26 / 96.95 / 2.87 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.47 / 107.17 / 26.23 
+   OVERALL AVERAGES:          108.47 / 107.17 / 26.23 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    110.99 / 109.46 / 4.78 
+   OVERALL AVERAGES:          110.99 / 109.46 / 4.78 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.70 / 92.03 / 2.90 
+   OVERALL AVERAGES:          112.70 / 92.03 / 2.90 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.57 / 91.81 / 6.48 
+   OVERALL AVERAGES:          111.57 / 91.81 / 6.48 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.53 / 102.56 / 7.35 
+   OVERALL AVERAGES:          112.53 / 102.56 / 7.35 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.20 / 112.93 / 112.15 
+   OVERALL AVERAGES:          113.20 / 112.93 / 112.15 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.01 / 113.77 / 112.78 
+   OVERALL AVERAGES:          114.01 / 113.77 / 112.78 
+
+
+real	0m33.122s
+user	0m16.268s
+sys	0m16.576s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    90.70 / 70.71 / 0.97 
+   OVERALL AVERAGES:          90.70 / 70.71 / 0.97 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    101.73 / 83.61 / 1.92 
+   OVERALL AVERAGES:          101.73 / 83.61 / 1.92 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    107.01 / 98.85 / 2.86 
+   OVERALL AVERAGES:          107.01 / 98.85 / 2.86 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.15 / 107.90 / 105.68 
+   OVERALL AVERAGES:          108.15 / 107.90 / 105.68 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    110.59 / 108.33 / 4.73 
+   OVERALL AVERAGES:          110.59 / 108.33 / 4.73 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.61 / 100.14 / 5.61 
+   OVERALL AVERAGES:          112.61 / 100.14 / 5.61 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.86 / 106.52 / 6.50 
+   OVERALL AVERAGES:          111.86 / 106.52 / 6.50 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.01 / 111.77 / 109.47 
+   OVERALL AVERAGES:          112.01 / 111.77 / 109.47 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.47 / 111.69 / 8.25 
+   OVERALL AVERAGES:          113.47 / 111.69 / 8.25 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    114.06 / 113.76 / 111.41 
+   OVERALL AVERAGES:          114.06 / 113.76 / 111.41 
+
+
+real	0m17.931s
+user	0m8.668s
+sys	0m8.976s
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --bynode, -bynode
+    Replacement: --map-by node
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_bynode
+    Replacement: rmaps_base_mapping_policy=node
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    86.47 / 77.84 / 0.97 
+   OVERALL AVERAGES:          86.47 / 77.84 / 0.97 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    101.55 / 95.78 / 1.94 
+   OVERALL AVERAGES:          101.55 / 95.78 / 1.94 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    104.18 / 103.97 / 101.15 
+   OVERALL AVERAGES:          104.18 / 103.97 / 101.15 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    108.14 / 107.92 / 106.16 
+   OVERALL AVERAGES:          108.14 / 107.92 / 106.16 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    110.98 / 110.47 / 108.60 
+   OVERALL AVERAGES:          110.98 / 110.47 / 108.60 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.69 / 90.36 / 5.59 
+   OVERALL AVERAGES:          112.69 / 90.36 / 5.59 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    111.66 / 106.50 / 6.51 
+   OVERALL AVERAGES:          111.66 / 106.50 / 6.51 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    112.51 / 111.99 / 111.48 
+   OVERALL AVERAGES:          112.51 / 111.99 / 111.48 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.24 / 112.97 / 112.16 
+   OVERALL AVERAGES:          113.24 / 112.97 / 112.16 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    113.94 / 113.76 / 112.60 
+   OVERALL AVERAGES:          113.94 / 113.76 / 112.60 
+
+
+real	0m15.314s
+user	0m7.428s
+sys	0m7.604s
+

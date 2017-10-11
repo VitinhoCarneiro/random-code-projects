@@ -8,9 +8,8 @@ int main(int argc, char** argv){
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	MPI_Comm_size(MPI_COMM_WORLD, &threads);
 	bArraySize = (int)(16000000 / threads) * threads;
-	printf("Oin %d\n", rank);
-	float array[(int)(bArraySize / threads)], *bigArray, sums[threads], sum = 0.f;
-	printf("Oin2 %d\n", rank);
+	float *array, *bigArray, sums[threads], sum = 0.f;
+	array = malloc(sizeof(float) * (int)(bArraySize / threads));
 	if(rank == 0){
 		printf("Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.\n");
 		bigArray = malloc(sizeof(float) * bArraySize);
@@ -18,9 +17,7 @@ int main(int argc, char** argv){
 			bigArray[i] = (float)(i);
 		}
 	}
-	printf("Oin3 %d\n", rank);
 	MPI_Scatter(bigArray, bArraySize / threads, MPI_FLOAT, array, bArraySize / threads, MPI_FLOAT, 0, MPI_COMM_WORLD);
-	printf("Oin4 %d\n", rank);
 	printf("Process %d got array.\n", rank);
 	for(i = 0; i < bArraySize / threads; i++){
 		array[i] = array[i] + (float)(i);
@@ -39,4 +36,5 @@ int main(int argc, char** argv){
 		}
 		printf("END OF REPORT. MISSION ACCOMPLISHED.\n");
 	}
+	MPI_Finalize();
 }

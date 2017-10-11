@@ -1,0 +1,174 @@
+mpi_bug1.c: 
++----------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug1
+Task 2 starting...
+Task 3 starting...
+Task 0 starting...
+Numtasks=4. Only 2 needed. Ignoring extra...
+Sent to task 1...
+Task 1 starting...
+
++----------------------------------------------+
+Problema: Tarefa 0 enviava, mas tarefa 1 nunca recebia e o programa travava
+Causa: Tarefa 0 mandando com tag 0, mas tarefa 1 tentando receber com tag 1... inicializar tag = 0 resolveu
++---------------------------------------------+
+Task 0 starting...
+Task 1 starting...
+Task 2 starting...
+Task 3 starting...
+Numtasks=4. Only 2 needed. Ignoring extra...
+Sent to task 1...
+Received from task 0...
+Sent to task 0...
+Task 1: Received 1 char(s) from task 0 with tag 0 
+Received from task 1...
+Task 0: Received 1 char(s) from task 1 with tag 0 
+
+
+
+mpi_bug2.c:
++----------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug2
+Numtasks=4. Only 2 needed. Ignoring extra...
+Task 0 sent = 0
+Task 0 sent = 10
+Task 0 sent = 20
+Task 0 sent = 30
+Task 0 sent = 40
+Task 0 sent = 50
+Task 0 sent = 60
+Task 0 sent = 70
+Task 0 sent = 80
+Task 0 sent = 90
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+Task 1 received = 0.000000
+
++----------------------------------------------+
+Problema: Tarefa 0 enviava valores, mas tarefa 1 recebia tudo como zeros
+Causa: Só pela análise da saída já se tornava aparente que a tarefa 1 tava interpretando os inteiros enviados pela tarefa 0 como floats... fazer a tarefa 1 receber inteiros e depois converter pra float resolveu o problema
++----------------------------------------------+
+Numtasks=4. Only 2 needed. Ignoring extra...
+Task 0 sent = 0
+Task 0 sent = 10
+Task 0 sent = 20
+Task 0 sent = 30
+Task 0 sent = 40
+Task 0 sent = 50
+Task 0 sent = 60
+Task 0 sent = 70
+Task 1 received = 0.000000
+Task 1 received = 10.000000
+Task 1 received = 20.000000
+Task 1 received = 30.000000
+Task 1 received = 40.000000
+Task 1 received = 50.000000
+Task 1 received = 60.000000
+Task 1 received = 70.000000
+Task 1 received = 80.000000
+Task 1 received = 90.000000
+Task 0 sent = 80
+Task 0 sent = 90
+
+mpi_bug3.c:
++------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug3
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+*** The MPI_Comm_size() function was called before MPI_INIT was invoked.
+*** This is disallowed by the MPI standard.
+*** Your MPI job will now abort.
+[4CLAB307:15224] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** The MPI_Comm_size() function was called before MPI_INIT was invoked.
+*** This is disallowed by the MPI standard.
+*** Your MPI job will now abort.
+[4CLAB307:15226] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** The MPI_Comm_size() function was called before MPI_INIT was invoked.
+*** This is disallowed by the MPI standard.
+*** Your MPI job will now abort.
+[4CLAB307:15223] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+
++------------------------------------------------+
+Problema: Programa termina dando erros
+Causa: Pela mensagem de erro, esqueceram de dar MPI_Init no começo do programa... inspecionando o código, esqueceram de dar MPI_Finalize também. Adicionando ambos, o problema foi resolvido.
++------------------------------------------------+
+MPI task 0 has started...
+MPI task 1 has started...
+MPI task 2 has started...
+MPI task 3 has started...
+Initialized array sum = 1.335708e+14
+Sent 4000000 elements to task 1 offset= 4000000
+Sent 4000000 elements to task 2 offset= 8000000
+Sent 4000000 elements to task 3 offset= 12000000
+Task 0 mysum = 1.598859e+13
+Task 1 mysum = 4.884048e+13
+Task 3 mysum = 1.161867e+14
+Task 2 mysum = 7.983003e+13
+Sample results: 
+  0.000000e+00  2.000000e+00  4.000000e+00  6.000000e+00  8.000000e+00
+  8.000000e+06  8.000002e+06  8.000004e+06  8.000006e+06  8.000008e+06
+  1.600000e+07  1.600000e+07  1.600000e+07  1.600001e+07  1.600001e+07
+  2.400000e+07  2.400000e+07  2.400000e+07  2.400001e+07  2.400001e+07
+*** Final sum= 2.608458e+14 ***
+
+
+mpi_bug4.c:
++------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug4
+MPI task 0 has started...
+MPI task 1 has started...
+MPI task 2 has started...
+MPI task 3 has started...
+Initialized array sum = 1.335708e+14
+Sent 4000000 elements to task 1 offset= 4000000
+Sent 4000000 elements to task 2 offset= 8000000
+Sent 4000000 elements to task 3 offset= 12000000
+Task 0 mysum = 1.598859e+13
+Task 2 mysum = 7.983003e+13
+Task 1 mysum = 4.884048e+13
+Task 3 mysum = 1.161867e+14
+Sample results: 
+  0.000000e+00  2.000000e+00  4.000000e+00  6.000000e+00  8.000000e+00
+  8.000000e+06  8.000002e+06  8.000004e+06  8.000006e+06  8.000008e+06
+  1.600000e+07  1.600000e+07  1.600000e+07  1.600001e+07  1.600001e+07
+  2.400000e+07  2.400000e+07  2.400000e+07  2.400001e+07  2.400001e+07
+*** Final sum= 1.335708e+14 ***
+
++------------------------------------------------+
+Problema: Programa imprime a soma errada, igual à soma do array inicial
+Causa: Programa esqueceu de calcular a soma do novo array e está printando a soma antiga... solução é calcular a soma no master ou calcular sub-somas em cada um e obter a soma no final... ou usar o MPI_Reduce
++------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug4
+MPI task 1 has started...
+MPI task 2 has started...
+MPI task 3 has started...
+MPI task 0 has started...
+Initialized array sum = 1.335708e+14
+Sent 4000000 elements to task 1 offset= 4000000
+Sent 4000000 elements to task 2 offset= 8000000
+Sent 4000000 elements to task 3 offset= 12000000
+Task 0 mysum = 1.598859e+13
+Task 1 mysum = 4.884048e+13
+Task 2 mysum = 7.983003e+13
+Task 3 mysum = 1.161867e+14
+Sample results: 
+  0.000000e+00  2.000000e+00  4.000000e+00  6.000000e+00  8.000000e+00
+  8.000000e+06  8.000002e+06  8.000004e+06  8.000006e+06  8.000008e+06
+  1.600000e+07  1.600000e+07  1.600000e+07  1.600001e+07  1.600001e+07
+  2.400000e+07  2.400000e+07  2.400000e+07  2.400001e+07  2.400001e+07
+*** Final sum= 2.671416e+14 ***
+
+mpi_bug5.c:
++------------------------------------------------+
+
++------------------------------------------------+
++------------------------------------------------+

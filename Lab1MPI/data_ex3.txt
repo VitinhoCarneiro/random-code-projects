@@ -1,0 +1,1242 @@
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 2 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 0 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 63875324051456.0
+
+Thread #1:
+First 5 elements: [8000000.0 8000002.0 8000004.0 8000006.0 8000008.0 ]
+Sum = 128651710431232.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m0.501s
+user	0m0.332s
+sys	0m0.080s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 4 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 0 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 15988588281856.0
+
+Thread #1:
+First 5 elements: [4000000.0 4000002.0 4000004.0 4000006.0 4000008.0 ]
+Sum = 32115953500160.0
+
+Thread #2:
+First 5 elements: [8000000.0 8000002.0 8000004.0 8000006.0 8000008.0 ]
+Sum = 48840480653312.0
+
+Thread #3:
+First 5 elements: [12000000.0 12000002.0 12000004.0 12000006.0 12000008.0 ]
+Sum = 63764338573312.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m0.457s
+user	0m0.500s
+sys	0m0.072s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 8 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 0 got array.
+Process 7 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 4000092782592.0
+
+Thread #1:
+First 5 elements: [2000000.0 2000002.0 2000004.0 2000006.0 2000008.0 ]
+Sum = 7988223410176.0
+
+Thread #2:
+First 5 elements: [4000000.0 4000002.0 4000004.0 4000006.0 4000008.0 ]
+Sum = 11963140669440.0
+
+Thread #3:
+First 5 elements: [6000000.0 6000002.0 6000004.0 6000006.0 6000008.0 ]
+Sum = 15945877684224.0
+
+Thread #4:
+First 5 elements: [8000000.0 8000002.0 8000004.0 8000006.0 8000008.0 ]
+Sum = 20237657309184.0
+
+Thread #5:
+First 5 elements: [10000000.0 10000002.0 10000004.0 10000006.0 10000008.0 ]
+Sum = 23888916381696.0
+
+Thread #6:
+First 5 elements: [12000000.0 12000002.0 12000004.0 12000006.0 12000008.0 ]
+Sum = 27849285173248.0
+
+Thread #7:
+First 5 elements: [14000000.0 14000002.0 14000004.0 14000006.0 14000008.0 ]
+Sum = 31880365735936.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m1.013s
+user	0m1.016s
+sys	0m0.868s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 16 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 0 got array.
+Process 15 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 999880720384.0
+
+Thread #1:
+First 5 elements: [1000000.0 1000002.0 1000004.0 1000006.0 1000008.0 ]
+Sum = 2000089120768.0
+
+Thread #2:
+First 5 elements: [2000000.0 2000002.0 2000004.0 2000006.0 2000008.0 ]
+Sum = 3000627363840.0
+
+Thread #3:
+First 5 elements: [3000000.0 3000002.0 3000004.0 3000006.0 3000008.0 ]
+Sum = 3999914524672.0
+
+Thread #4:
+First 5 elements: [4000000.0 4000002.0 4000004.0 4000006.0 4000008.0 ]
+Sum = 4987344125952.0
+
+Thread #5:
+First 5 elements: [5000000.0 5000002.0 5000004.0 5000006.0 5000008.0 ]
+Sum = 6005787721728.0
+
+Thread #6:
+First 5 elements: [6000000.0 6000002.0 6000004.0 6000006.0 6000008.0 ]
+Sum = 7000268734464.0
+
+Thread #7:
+First 5 elements: [7000000.0 7000002.0 7000004.0 7000006.0 7000008.0 ]
+Sum = 8010832805888.0
+
+Thread #8:
+First 5 elements: [8000000.0 8000002.0 8000004.0 8000006.0 8000008.0 ]
+Sum = 9012422639616.0
+
+Thread #9:
+First 5 elements: [9000000.0 9000002.0 9000004.0 9000006.0 9000008.0 ]
+Sum = 9943716462592.0
+
+Thread #10:
+First 5 elements: [10000000.0 10000002.0 10000004.0 10000006.0 10000008.0 ]
+Sum = 10950327402496.0
+
+Thread #11:
+First 5 elements: [11000000.0 11000002.0 11000004.0 11000006.0 11000008.0 ]
+Sum = 11974967558144.0
+
+Thread #12:
+First 5 elements: [12000000.0 12000002.0 12000004.0 12000006.0 12000008.0 ]
+Sum = 12966353174528.0
+
+Thread #13:
+First 5 elements: [13000000.0 13000002.0 13000004.0 13000006.0 13000008.0 ]
+Sum = 14009024643072.0
+
+Thread #14:
+First 5 elements: [14000000.0 14000002.0 14000004.0 14000006.0 14000008.0 ]
+Sum = 15053088620544.0
+
+Thread #15:
+First 5 elements: [15000000.0 15000002.0 15000004.0 15000006.0 15000008.0 ]
+Sum = 16029189144576.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m1.261s
+user	0m1.272s
+sys	0m1.644s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 32 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+Process 20 got array.
+Process 21 got array.
+Process 22 got array.
+Process 23 got array.
+Process 24 got array.
+Process 25 got array.
+Process 26 got array.
+Process 27 got array.
+Process 28 got array.
+Process 29 got array.
+Process 30 got array.
+Process 0 got array.
+Process 31 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 250000293888.0
+
+Thread #1:
+First 5 elements: [ 500000.0  500002.0  500004.0  500006.0  500008.0 ]
+Sum = 500054032384.0
+
+Thread #2:
+First 5 elements: [1000000.0 1000002.0 1000004.0 1000006.0 1000008.0 ]
+Sum = 749795213312.0
+
+Thread #3:
+First 5 elements: [1500000.0 1500002.0 1500004.0 1500006.0 1500008.0 ]
+Sum = 999976075264.0
+
+Thread #4:
+First 5 elements: [2000000.0 2000002.0 2000004.0 2000006.0 2000008.0 ]
+Sum = 1249948336128.0
+
+Thread #5:
+First 5 elements: [2500000.0 2500002.0 2500004.0 2500006.0 2500008.0 ]
+Sum = 1499735392256.0
+
+Thread #6:
+First 5 elements: [3000000.0 3000002.0 3000004.0 3000006.0 3000008.0 ]
+Sum = 1749008646144.0
+
+Thread #7:
+First 5 elements: [3500000.0 3500002.0 3500004.0 3500006.0 3500008.0 ]
+Sum = 1999599304704.0
+
+Thread #8:
+First 5 elements: [4000000.0 4000002.0 4000004.0 4000006.0 4000008.0 ]
+Sum = 2250804822016.0
+
+Thread #9:
+First 5 elements: [4500000.0 4500002.0 4500004.0 4500006.0 4500008.0 ]
+Sum = 2503331020800.0
+
+Thread #10:
+First 5 elements: [5000000.0 5000002.0 5000004.0 5000006.0 5000008.0 ]
+Sum = 2750484316160.0
+
+Thread #11:
+First 5 elements: [5500000.0 5500002.0 5500004.0 5500006.0 5500008.0 ]
+Sum = 2999285710848.0
+
+Thread #12:
+First 5 elements: [6000000.0 6000002.0 6000004.0 6000006.0 6000008.0 ]
+Sum = 3253355151360.0
+
+Thread #13:
+First 5 elements: [6500000.0 6500002.0 6500004.0 6500006.0 6500008.0 ]
+Sum = 3497513451520.0
+
+Thread #14:
+First 5 elements: [7000000.0 7000002.0 7000004.0 7000006.0 7000008.0 ]
+Sum = 3746009186304.0
+
+Thread #15:
+First 5 elements: [7500000.0 7500002.0 7500004.0 7500006.0 7500008.0 ]
+Sum = 3997707534336.0
+
+Thread #16:
+First 5 elements: [8000000.0 8000002.0 8000004.0 8000006.0 8000008.0 ]
+Sum = 4251595571200.0
+
+Thread #17:
+First 5 elements: [8500000.0 8500002.0 8500004.0 8500006.0 8500008.0 ]
+Sum = 4500730413056.0
+
+Thread #18:
+First 5 elements: [9000000.0 9000002.0 9000004.0 9000006.0 9000008.0 ]
+Sum = 4750752350208.0
+
+Thread #19:
+First 5 elements: [9500000.0 9500002.0 9500004.0 9500006.0 9500008.0 ]
+Sum = 5000020361216.0
+
+Thread #20:
+First 5 elements: [10000000.0 10000002.0 10000004.0 10000006.0 10000008.0 ]
+Sum = 5254512902144.0
+
+Thread #21:
+First 5 elements: [10500000.0 10500002.0 10500004.0 10500006.0 10500008.0 ]
+Sum = 5514885332992.0
+
+Thread #22:
+First 5 elements: [11000000.0 11000002.0 11000004.0 11000006.0 11000008.0 ]
+Sum = 5767599489024.0
+
+Thread #23:
+First 5 elements: [11500000.0 11500002.0 11500004.0 11500006.0 11500008.0 ]
+Sum = 6006010544128.0
+
+Thread #24:
+First 5 elements: [12000000.0 12000002.0 12000004.0 12000006.0 12000008.0 ]
+Sum = 6247431012352.0
+
+Thread #25:
+First 5 elements: [12500000.0 12500002.0 12500004.0 12500006.0 12500008.0 ]
+Sum = 6495891619840.0
+
+Thread #26:
+First 5 elements: [13000000.0 13000002.0 13000004.0 13000006.0 13000008.0 ]
+Sum = 6744960401408.0
+
+Thread #27:
+First 5 elements: [13500000.0 13500002.0 13500004.0 13500006.0 13500008.0 ]
+Sum = 6992288546816.0
+
+Thread #28:
+First 5 elements: [14000000.0 14000002.0 14000004.0 14000006.0 14000008.0 ]
+Sum = 7242346135552.0
+
+Thread #29:
+First 5 elements: [14500000.0 14500002.0 14500004.0 14500006.0 14500008.0 ]
+Sum = 7490698739712.0
+
+Thread #30:
+First 5 elements: [15000000.0 15000002.0 15000004.0 15000006.0 15000008.0 ]
+Sum = 7739092238336.0
+
+Thread #31:
+First 5 elements: [15500000.0 15500002.0 15500004.0 15500006.0 15500008.0 ]
+Sum = 7993696452608.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m1.499s
+user	0m1.632s
+sys	0m1.964s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 64 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+^C
+real	0m41.649s
+user	1m20.756s
+sys	1m23.208s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 64 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+Process 20 got array.
+Process 21 got array.
+Process 22 got array.
+Process 23 got array.
+Process 24 got array.
+Process 25 got array.
+Process 26 got array.
+Process 27 got array.
+Process 28 got array.
+Process 29 got array.
+Process 30 got array.
+Process 31 got array.
+Process 32 got array.
+^C
+real	0m2.411s
+user	0m3.724s
+sys	0m4.212s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 64 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+Process 20 got array.
+Process 21 got array.
+Process 22 got array.
+Process 23 got array.
+Process 24 got array.
+Process 25 got array.
+Process 26 got array.
+Process 27 got array.
+Process 28 got array.
+Process 29 got array.
+Process 30 got array.
+Process 31 got array.
+Process 32 got array.
+Process 33 got array.
+Process 34 got array.
+Process 35 got array.
+Process 36 got array.
+Process 37 got array.
+Process 38 got array.
+Process 39 got array.
+Process 40 got array.
+Process 41 got array.
+Process 42 got array.
+Process 43 got array.
+Process 44 got array.
+Process 45 got array.
+Process 46 got array.
+Process 47 got array.
+Process 48 got array.
+Process 49 got array.
+Process 50 got array.
+Process 51 got array.
+Process 52 got array.
+Process 53 got array.
+Process 54 got array.
+Process 55 got array.
+Process 56 got array.
+Process 57 got array.
+Process 58 got array.
+Process 59 got array.
+Process 60 got array.
+Process 61 got array.
+Process 62 got array.
+Process 0 got array.
+Process 63 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 62500495360.0
+
+Thread #1:
+First 5 elements: [ 250000.0  250002.0  250004.0  250006.0  250008.0 ]
+Sum = 124996157440.0
+
+Thread #2:
+First 5 elements: [ 500000.0  500002.0  500004.0  500006.0  500008.0 ]
+Sum = 187513913344.0
+
+Thread #3:
+First 5 elements: [ 750000.0  750002.0  750004.0  750006.0  750008.0 ]
+Sum = 250002604032.0
+
+Thread #4:
+First 5 elements: [1000000.0 1000002.0 1000004.0 1000006.0 1000008.0 ]
+Sum = 312486658048.0
+
+Thread #5:
+First 5 elements: [1250000.0 1250002.0 1250004.0 1250006.0 1250008.0 ]
+Sum = 374962356224.0
+
+Thread #6:
+First 5 elements: [1500000.0 1500002.0 1500004.0 1500006.0 1500008.0 ]
+Sum = 437499428864.0
+
+Thread #7:
+First 5 elements: [1750000.0 1750002.0 1750004.0 1750006.0 1750008.0 ]
+Sum = 499972014080.0
+
+Thread #8:
+First 5 elements: [2000000.0 2000002.0 2000004.0 2000006.0 2000008.0 ]
+Sum = 562479366144.0
+
+Thread #9:
+First 5 elements: [2250000.0 2250002.0 2250004.0 2250006.0 2250008.0 ]
+Sum = 625008574464.0
+
+Thread #10:
+First 5 elements: [2500000.0 2500002.0 2500004.0 2500006.0 2500008.0 ]
+Sum = 687561244672.0
+
+Thread #11:
+First 5 elements: [2750000.0 2750002.0 2750004.0 2750006.0 2750008.0 ]
+Sum = 749902757888.0
+
+Thread #12:
+First 5 elements: [3000000.0 3000002.0 3000004.0 3000006.0 3000008.0 ]
+Sum = 812332023808.0
+
+Thread #13:
+First 5 elements: [3250000.0 3250002.0 3250004.0 3250006.0 3250008.0 ]
+Sum = 875220762624.0
+
+Thread #14:
+First 5 elements: [3500000.0 3500002.0 3500004.0 3500006.0 3500008.0 ]
+Sum = 937572630528.0
+
+Thread #15:
+First 5 elements: [3750000.0 3750002.0 3750004.0 3750006.0 3750008.0 ]
+Sum = 1000214036480.0
+
+Thread #16:
+First 5 elements: [4000000.0 4000002.0 4000004.0 4000006.0 4000008.0 ]
+Sum = 1062385680384.0
+
+Thread #17:
+First 5 elements: [4250000.0 4250002.0 4250004.0 4250006.0 4250008.0 ]
+Sum = 1124872880128.0
+
+Thread #18:
+First 5 elements: [4500000.0 4500002.0 4500004.0 4500006.0 4500008.0 ]
+Sum = 1187465134080.0
+
+Thread #19:
+First 5 elements: [4750000.0 4750002.0 4750004.0 4750006.0 4750008.0 ]
+Sum = 1250635939840.0
+
+Thread #20:
+First 5 elements: [5000000.0 5000002.0 5000004.0 5000006.0 5000008.0 ]
+Sum = 1313193066496.0
+
+Thread #21:
+First 5 elements: [5250000.0 5250002.0 5250004.0 5250006.0 5250008.0 ]
+Sum = 1374970445824.0
+
+Thread #22:
+First 5 elements: [5500000.0 5500002.0 5500004.0 5500006.0 5500008.0 ]
+Sum = 1437289414656.0
+
+Thread #23:
+First 5 elements: [5750000.0 5750002.0 5750004.0 5750006.0 5750008.0 ]
+Sum = 1499987705856.0
+
+Thread #24:
+First 5 elements: [6000000.0 6000002.0 6000004.0 6000006.0 6000008.0 ]
+Sum = 1562882867200.0
+
+Thread #25:
+First 5 elements: [6250000.0 6250002.0 6250004.0 6250006.0 6250008.0 ]
+Sum = 1624177246208.0
+
+Thread #26:
+First 5 elements: [6500000.0 6500002.0 6500004.0 6500006.0 6500008.0 ]
+Sum = 1686817865728.0
+
+Thread #27:
+First 5 elements: [6750000.0 6750002.0 6750004.0 6750006.0 6750008.0 ]
+Sum = 1749872410624.0
+
+Thread #28:
+First 5 elements: [7000000.0 7000002.0 7000004.0 7000006.0 7000008.0 ]
+Sum = 1812299120640.0
+
+Thread #29:
+First 5 elements: [7250000.0 7250002.0 7250004.0 7250006.0 7250008.0 ]
+Sum = 1875710967808.0
+
+Thread #30:
+First 5 elements: [7500000.0 7500002.0 7500004.0 7500006.0 7500008.0 ]
+Sum = 1938304401408.0
+
+Thread #31:
+First 5 elements: [7750000.0 7750002.0 7750004.0 7750006.0 7750008.0 ]
+Sum = 2000189259776.0
+
+Thread #32:
+First 5 elements: [8000000.0 8000002.0 8000004.0 8000006.0 8000008.0 ]
+Sum = 2062412808192.0
+
+Thread #33:
+First 5 elements: [8250000.0 8250002.0 8250004.0 8250006.0 8250008.0 ]
+Sum = 2124758777856.0
+
+Thread #34:
+First 5 elements: [8500000.0 8500002.0 8500004.0 8500006.0 8500008.0 ]
+Sum = 2187148525568.0
+
+Thread #35:
+First 5 elements: [8750000.0 8750002.0 8750004.0 8750006.0 8750008.0 ]
+Sum = 2249215180800.0
+
+Thread #36:
+First 5 elements: [9000000.0 9000002.0 9000004.0 9000006.0 9000008.0 ]
+Sum = 2312637251584.0
+
+Thread #37:
+First 5 elements: [9250000.0 9250002.0 9250004.0 9250006.0 9250008.0 ]
+Sum = 2374852673536.0
+
+Thread #38:
+First 5 elements: [9500000.0 9500002.0 9500004.0 9500006.0 9500008.0 ]
+Sum = 2437200216064.0
+
+Thread #39:
+First 5 elements: [9750000.0 9750002.0 9750004.0 9750006.0 9750008.0 ]
+Sum = 2500080435200.0
+
+Thread #40:
+First 5 elements: [10000000.0 10000002.0 10000004.0 10000006.0 10000008.0 ]
+Sum = 2562458648576.0
+
+Thread #41:
+First 5 elements: [10250000.0 10250002.0 10250004.0 10250006.0 10250008.0 ]
+Sum = 2625821736960.0
+
+Thread #42:
+First 5 elements: [10500000.0 10500002.0 10500004.0 10500006.0 10500008.0 ]
+Sum = 2689951858688.0
+
+Thread #43:
+First 5 elements: [10750000.0 10750002.0 10750004.0 10750006.0 10750008.0 ]
+Sum = 2754519760896.0
+
+Thread #44:
+First 5 elements: [11000000.0 11000002.0 11000004.0 11000006.0 11000008.0 ]
+Sum = 2816722599936.0
+
+Thread #45:
+First 5 elements: [11250000.0 11250002.0 11250004.0 11250006.0 11250008.0 ]
+Sum = 2876975611904.0
+
+Thread #46:
+First 5 elements: [11500000.0 11500002.0 11500004.0 11500006.0 11500008.0 ]
+Sum = 2937632325632.0
+
+Thread #47:
+First 5 elements: [11750000.0 11750002.0 11750004.0 11750006.0 11750008.0 ]
+Sum = 2998798123008.0
+
+Thread #48:
+First 5 elements: [12000000.0 12000002.0 12000004.0 12000006.0 12000008.0 ]
+Sum = 3061085896704.0
+
+Thread #49:
+First 5 elements: [12250000.0 12250002.0 12250004.0 12250006.0 12250008.0 ]
+Sum = 3122778603520.0
+
+Thread #50:
+First 5 elements: [12500000.0 12500002.0 12500004.0 12500006.0 12500008.0 ]
+Sum = 3184841457664.0
+
+Thread #51:
+First 5 elements: [12750000.0 12750002.0 12750004.0 12750006.0 12750008.0 ]
+Sum = 3247221506048.0
+
+Thread #52:
+First 5 elements: [13000000.0 13000002.0 13000004.0 13000006.0 13000008.0 ]
+Sum = 3309259194368.0
+
+Thread #53:
+First 5 elements: [13250000.0 13250002.0 13250004.0 13250006.0 13250008.0 ]
+Sum = 3372148588544.0
+
+Thread #54:
+First 5 elements: [13500000.0 13500002.0 13500004.0 13500006.0 13500008.0 ]
+Sum = 3435066294272.0
+
+Thread #55:
+First 5 elements: [13750000.0 13750002.0 13750004.0 13750006.0 13750008.0 ]
+Sum = 3499364974592.0
+
+Thread #56:
+First 5 elements: [14000000.0 14000002.0 14000004.0 14000006.0 14000008.0 ]
+Sum = 3563602575360.0
+
+Thread #57:
+First 5 elements: [14250000.0 14250002.0 14250004.0 14250006.0 14250008.0 ]
+Sum = 3627805310976.0
+
+Thread #58:
+First 5 elements: [14500000.0 14500002.0 14500004.0 14500006.0 14500008.0 ]
+Sum = 3690433609728.0
+
+Thread #59:
+First 5 elements: [14750000.0 14750002.0 14750004.0 14750006.0 14750008.0 ]
+Sum = 3752313487360.0
+
+Thread #60:
+First 5 elements: [15000000.0 15000002.0 15000004.0 15000006.0 15000008.0 ]
+Sum = 3814408847360.0
+
+Thread #61:
+First 5 elements: [15250000.0 15250002.0 15250004.0 15250006.0 15250008.0 ]
+Sum = 3876023959552.0
+
+Thread #62:
+First 5 elements: [15500000.0 15500002.0 15500004.0 15500006.0 15500008.0 ]
+Sum = 3938006073344.0
+
+Thread #63:
+First 5 elements: [15750000.0 15750002.0 15750004.0 15750006.0 15750008.0 ]
+Sum = 4000165396480.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m4.758s
+user	0m4.180s
+sys	0m7.272s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 64 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+Process 20 got array.
+Process 21 got array.
+Process 22 got array.
+Process 23 got array.
+Process 24 got array.
+Process 25 got array.
+Process 26 got array.
+Process 27 got array.
+Process 28 got array.
+Process 29 got array.
+Process 30 got array.
+Process 31 got array.
+^C
+real	0m6.766s
+user	0m12.756s
+sys	0m12.436s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ 
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 36 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+Process 20 got array.
+Process 21 got array.
+Process 22 got array.
+Process 23 got array.
+Process 24 got array.
+Process 25 got array.
+Process 26 got array.
+Process 27 got array.
+Process 28 got array.
+Process 29 got array.
+Process 30 got array.
+Process 31 got array.
+Process 32 got array.
+Process 33 got array.
+Process 34 got array.
+Process 0 got array.
+Process 35 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 197526650880.0
+
+Thread #1:
+First 5 elements: [ 444444.0  444446.0  444448.0  444450.0  444452.0 ]
+Sum = 395034525696.0
+
+Thread #2:
+First 5 elements: [ 888888.0  888890.0  888892.0  888894.0  888896.0 ]
+Sum = 592721281024.0
+
+Thread #3:
+First 5 elements: [1333332.0 1333334.0 1333336.0 1333338.0 1333340.0 ]
+Sum = 790304522240.0
+
+Thread #4:
+First 5 elements: [1777776.0 1777778.0 1777780.0 1777782.0 1777784.0 ]
+Sum = 987642396672.0
+
+Thread #5:
+First 5 elements: [2222220.0 2222222.0 2222224.0 2222226.0 2222228.0 ]
+Sum = 1185152237568.0
+
+Thread #6:
+First 5 elements: [2666664.0 2666666.0 2666668.0 2666670.0 2666672.0 ]
+Sum = 1382902792192.0
+
+Thread #7:
+First 5 elements: [3111108.0 3111110.0 3111112.0 3111114.0 3111116.0 ]
+Sum = 1579955388416.0
+
+Thread #8:
+First 5 elements: [3555552.0 3555554.0 3555556.0 3555558.0 3555560.0 ]
+Sum = 1778789384192.0
+
+Thread #9:
+First 5 elements: [3999996.0 3999998.0 4000000.0 4000002.0 4000004.0 ]
+Sum = 1975817732096.0
+
+Thread #10:
+First 5 elements: [4444440.0 4444442.0 4444444.0 4444446.0 4444448.0 ]
+Sum = 2173753753600.0
+
+Thread #11:
+First 5 elements: [4888884.0 4888886.0 4888888.0 4888890.0 4888892.0 ]
+Sum = 2371084091392.0
+
+Thread #12:
+First 5 elements: [5333328.0 5333330.0 5333332.0 5333334.0 5333336.0 ]
+Sum = 2567565737984.0
+
+Thread #13:
+First 5 elements: [5777772.0 5777774.0 5777776.0 5777778.0 5777780.0 ]
+Sum = 2762245406720.0
+
+Thread #14:
+First 5 elements: [6222216.0 6222218.0 6222220.0 6222222.0 6222224.0 ]
+Sum = 2963673972736.0
+
+Thread #15:
+First 5 elements: [6666660.0 6666662.0 6666664.0 6666666.0 6666668.0 ]
+Sum = 3160256282624.0
+
+Thread #16:
+First 5 elements: [7111104.0 7111106.0 7111108.0 7111110.0 7111112.0 ]
+Sum = 3357281091584.0
+
+Thread #17:
+First 5 elements: [7555548.0 7555550.0 7555552.0 7555554.0 7555556.0 ]
+Sum = 3555035971584.0
+
+Thread #18:
+First 5 elements: [7999992.0 7999994.0 7999996.0 7999998.0 8000000.0 ]
+Sum = 3756427575296.0
+
+Thread #19:
+First 5 elements: [8444436.0 8444438.0 8444440.0 8444442.0 8444444.0 ]
+Sum = 3948511494144.0
+
+Thread #20:
+First 5 elements: [8888880.0 8888882.0 8888884.0 8888886.0 8888888.0 ]
+Sum = 4147241549824.0
+
+Thread #21:
+First 5 elements: [9333324.0 9333326.0 9333328.0 9333330.0 9333332.0 ]
+Sum = 4347579858944.0
+
+Thread #22:
+First 5 elements: [9777768.0 9777770.0 9777772.0 9777774.0 9777776.0 ]
+Sum = 4538256326656.0
+
+Thread #23:
+First 5 elements: [10222212.0 10222214.0 10222216.0 10222218.0 10222220.0 ]
+Sum = 4741510201344.0
+
+Thread #24:
+First 5 elements: [10666656.0 10666658.0 10666660.0 10666662.0 10666664.0 ]
+Sum = 4938240884736.0
+
+Thread #25:
+First 5 elements: [11111100.0 11111102.0 11111104.0 11111106.0 11111108.0 ]
+Sum = 5141730164736.0
+
+Thread #26:
+First 5 elements: [11555544.0 11555546.0 11555548.0 11555550.0 11555552.0 ]
+Sum = 5346769764352.0
+
+Thread #27:
+First 5 elements: [11999988.0 11999990.0 11999992.0 11999994.0 11999996.0 ]
+Sum = 5519241117696.0
+
+Thread #28:
+First 5 elements: [12444432.0 12444434.0 12444436.0 12444438.0 12444440.0 ]
+Sum = 5715744260096.0
+
+Thread #29:
+First 5 elements: [12888876.0 12888878.0 12888880.0 12888882.0 12888884.0 ]
+Sum = 5924588617728.0
+
+Thread #30:
+First 5 elements: [13333320.0 13333322.0 13333324.0 13333326.0 13333328.0 ]
+Sum = 6128549756928.0
+
+Thread #31:
+First 5 elements: [13777764.0 13777766.0 13777768.0 13777770.0 13777772.0 ]
+Sum = 6336578322432.0
+
+Thread #32:
+First 5 elements: [14222208.0 14222210.0 14222212.0 14222214.0 14222216.0 ]
+Sum = 6521742688256.0
+
+Thread #33:
+First 5 elements: [14666652.0 14666654.0 14666656.0 14666658.0 14666660.0 ]
+Sum = 6708558561280.0
+
+Thread #34:
+First 5 elements: [15111096.0 15111098.0 15111100.0 15111102.0 15111104.0 ]
+Sum = 6898372313088.0
+
+Thread #35:
+First 5 elements: [15555540.0 15555542.0 15555544.0 15555546.0 15555548.0 ]
+Sum = 7106267709440.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m1.477s
+user	0m1.508s
+sys	0m2.088s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 40 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+Process 20 got array.
+^C
+real	0m4.207s
+user	0m7.072s
+sys	0m8.016s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 38 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+^C
+real	0m2.284s
+user	0m3.664s
+sys	0m3.680s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 37 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+Process 18 got array.
+Process 19 got array.
+Process 20 got array.
+Process 21 got array.
+Process 22 got array.
+Process 23 got array.
+Process 24 got array.
+Process 25 got array.
+Process 26 got array.
+Process 27 got array.
+Process 28 got array.
+Process 29 got array.
+Process 30 got array.
+Process 31 got array.
+Process 32 got array.
+Process 33 got array.
+Process 34 got array.
+Process 35 got array.
+Process 0 got array.
+Process 36 got array.
+Captain Roberto presents you the results:
+
+Thread #0:
+First 5 elements: [      0.0       2.0       4.0       6.0       8.0 ]
+Sum = 186994900992.0
+
+Thread #1:
+First 5 elements: [ 432432.0  432434.0  432436.0  432438.0  432440.0 ]
+Sum = 373994881024.0
+
+Thread #2:
+First 5 elements: [ 864864.0  864866.0  864868.0  864870.0  864872.0 ]
+Sum = 560905191424.0
+
+Thread #3:
+First 5 elements: [1297296.0 1297298.0 1297300.0 1297302.0 1297304.0 ]
+Sum = 747989565440.0
+
+Thread #4:
+First 5 elements: [1729728.0 1729730.0 1729732.0 1729734.0 1729736.0 ]
+Sum = 934813630464.0
+
+Thread #5:
+First 5 elements: [2162160.0 2162162.0 2162164.0 2162166.0 2162168.0 ]
+Sum = 1121987854336.0
+
+Thread #6:
+First 5 elements: [2594592.0 2594594.0 2594596.0 2594598.0 2594600.0 ]
+Sum = 1309388832768.0
+
+Thread #7:
+First 5 elements: [3027024.0 3027026.0 3027028.0 3027030.0 3027032.0 ]
+Sum = 1495771381760.0
+
+Thread #8:
+First 5 elements: [3459456.0 3459458.0 3459460.0 3459462.0 3459464.0 ]
+Sum = 1683190317056.0
+
+Thread #9:
+First 5 elements: [3891888.0 3891890.0 3891892.0 3891894.0 3891896.0 ]
+Sum = 1869916405760.0
+
+Thread #10:
+First 5 elements: [4324320.0 4324322.0 4324324.0 4324326.0 4324328.0 ]
+Sum = 2056605925376.0
+
+Thread #11:
+First 5 elements: [4756752.0 4756754.0 4756756.0 4756758.0 4756760.0 ]
+Sum = 2243267919872.0
+
+Thread #12:
+First 5 elements: [5189184.0 5189186.0 5189188.0 5189190.0 5189192.0 ]
+Sum = 2431181914112.0
+
+Thread #13:
+First 5 elements: [5621616.0 5621618.0 5621620.0 5621622.0 5621624.0 ]
+Sum = 2616940298240.0
+
+Thread #14:
+First 5 elements: [6054048.0 6054050.0 6054052.0 6054054.0 6054056.0 ]
+Sum = 2802924388352.0
+
+Thread #15:
+First 5 elements: [6486480.0 6486482.0 6486484.0 6486486.0 6486488.0 ]
+Sum = 2992242688000.0
+
+Thread #16:
+First 5 elements: [6918912.0 6918914.0 6918916.0 6918918.0 6918920.0 ]
+Sum = 3177955983360.0
+
+Thread #17:
+First 5 elements: [7351344.0 7351346.0 7351348.0 7351350.0 7351352.0 ]
+Sum = 3364489003008.0
+
+Thread #18:
+First 5 elements: [7783776.0 7783778.0 7783780.0 7783782.0 7783784.0 ]
+Sum = 3554029076480.0
+
+Thread #19:
+First 5 elements: [8216208.0 8216210.0 8216212.0 8216214.0 8216216.0 ]
+Sum = 3739386380288.0
+
+Thread #20:
+First 5 elements: [8648640.0 8648642.0 8648644.0 8648646.0 8648648.0 ]
+Sum = 3925491056640.0
+
+Thread #21:
+First 5 elements: [9081072.0 9081074.0 9081076.0 9081078.0 9081080.0 ]
+Sum = 4117348483072.0
+
+Thread #22:
+First 5 elements: [9513504.0 9513506.0 9513508.0 9513510.0 9513512.0 ]
+Sum = 4298391420928.0
+
+Thread #23:
+First 5 elements: [9945936.0 9945938.0 9945940.0 9945942.0 9945944.0 ]
+Sum = 4493008175104.0
+
+Thread #24:
+First 5 elements: [10378368.0 10378370.0 10378372.0 10378374.0 10378376.0 ]
+Sum = 4668318023680.0
+
+Thread #25:
+First 5 elements: [10810800.0 10810802.0 10810804.0 10810806.0 10810808.0 ]
+Sum = 4857270894592.0
+
+Thread #26:
+First 5 elements: [11243232.0 11243234.0 11243236.0 11243238.0 11243240.0 ]
+Sum = 5050232471552.0
+
+Thread #27:
+First 5 elements: [11675664.0 11675666.0 11675668.0 11675670.0 11675672.0 ]
+Sum = 5242685489152.0
+
+Thread #28:
+First 5 elements: [12108096.0 12108098.0 12108100.0 12108102.0 12108104.0 ]
+Sum = 5434841235456.0
+
+Thread #29:
+First 5 elements: [12540528.0 12540530.0 12540532.0 12540534.0 12540536.0 ]
+Sum = 5597210607616.0
+
+Thread #30:
+First 5 elements: [12972960.0 12972962.0 12972964.0 12972966.0 12972968.0 ]
+Sum = 5786324959232.0
+
+Thread #31:
+First 5 elements: [13405392.0 13405394.0 13405396.0 13405398.0 13405400.0 ]
+Sum = 5983799607296.0
+
+Thread #32:
+First 5 elements: [13837824.0 13837826.0 13837828.0 13837830.0 13837832.0 ]
+Sum = 6182694027264.0
+
+Thread #33:
+First 5 elements: [14270256.0 14270258.0 14270260.0 14270262.0 14270264.0 ]
+Sum = 6367511838720.0
+
+Thread #34:
+First 5 elements: [14702688.0 14702690.0 14702692.0 14702694.0 14702696.0 ]
+Sum = 6538936713216.0
+
+Thread #35:
+First 5 elements: [15135120.0 15135122.0 15135124.0 15135126.0 15135128.0 ]
+Sum = 6716664578048.0
+
+Thread #36:
+First 5 elements: [15567552.0 15567554.0 15567556.0 15567558.0 15567560.0 ]
+Sum = 6914493120512.0
+
+END OF REPORT. MISSION ACCOMPLISHED.
+
+real	0m1.575s
+user	0m1.864s
+sys	0m2.112s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ time mpirun --hostfile hostnames -np 37 -mca plm_rsh_no_tree_spawn 1 ex3
+Captain Roberto Nascimento is up. You better move. Mission given, mission accomplished.
+Process 1 got array.
+Process 2 got array.
+Process 3 got array.
+Process 4 got array.
+Process 5 got array.
+Process 6 got array.
+Process 7 got array.
+Process 8 got array.
+Process 9 got array.
+Process 10 got array.
+Process 11 got array.
+Process 12 got array.
+Process 13 got array.
+Process 14 got array.
+Process 15 got array.
+Process 16 got array.
+Process 17 got array.
+^C
+real	0m4.347s
+user	0m7.780s
+sys	0m7.824s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ 
+

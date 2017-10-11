@@ -1,0 +1,1120 @@
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ for i in `seq 10`; do time mpirun --hostfile hostnames -np 2 -mca plm_rsh_no_tree_spawn 1 mpi_bandwidthNB; done
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 17371.34 / 62.81 
+   OVERALL AVERAGES:          18236.10 / 17371.34 / 62.81 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 17246.02 / 9320.68 
+   OVERALL AVERAGES:          17476.27 / 17246.02 / 9320.68 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 15016.48 / 79.00 
+   OVERALL AVERAGES:          17236.87 / 15016.48 / 79.00 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17385.72 / 16605.23 / 197.48 
+   OVERALL AVERAGES:          17385.72 / 16605.23 / 197.48 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 16800.53 / 376.20 
+   OVERALL AVERAGES:          17260.51 / 16800.53 / 376.20 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17415.80 / 15462.94 / 185.99 
+   OVERALL AVERAGES:          17415.80 / 15462.94 / 185.99 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 14584.06 / 402.30 
+   OVERALL AVERAGES:          17321.61 / 14584.06 / 402.30 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17207.40 / 15246.96 / 404.56 
+   OVERALL AVERAGES:          17207.40 / 15246.96 / 404.56 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17315.93 / 14927.92 / 539.58 
+   OVERALL AVERAGES:          17315.93 / 14927.92 / 539.58 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17403.75 / 15115.49 / 793.02 
+   OVERALL AVERAGES:          17403.75 / 15115.49 / 793.02 
+
+
+real	0m0.611s
+user	0m0.288s
+sys	0m0.016s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 16065.78 / 155.66 
+   OVERALL AVERAGES:          18236.10 / 16065.78 / 155.66 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 14224.44 / 132.53 
+   OVERALL AVERAGES:          17476.27 / 14224.44 / 132.53 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17119.61 / 15669.29 / 306.90 
+   OVERALL AVERAGES:          17119.61 / 15669.29 / 306.90 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 14734.64 / 99.70 
+   OVERALL AVERAGES:          17032.71 / 14734.64 / 99.70 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    16980.99 / 15078.49 / 204.29 
+   OVERALL AVERAGES:          16980.99 / 15078.49 / 204.29 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17178.04 / 14263.19 / 219.65 
+   OVERALL AVERAGES:          17178.04 / 14263.19 / 219.65 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    16873.64 / 14430.30 / 306.35 
+   OVERALL AVERAGES:          16873.64 / 14430.30 / 306.35 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 15346.01 / 233.48 
+   OVERALL AVERAGES:          17032.71 / 15346.01 / 233.48 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17158.52 / 14993.86 / 228.43 
+   OVERALL AVERAGES:          17158.52 / 14993.86 / 228.43 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 13546.98 / 442.76 
+   OVERALL AVERAGES:          17260.51 / 13546.98 / 442.76 
+
+
+real	0m0.686s
+user	0m0.332s
+sys	0m0.008s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 16821.46 / 169.36 
+   OVERALL AVERAGES:          18236.10 / 16821.46 / 169.36 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 16636.47 / 323.63 
+   OVERALL AVERAGES:          17476.27 / 16636.47 / 323.63 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 14977.04 / 137.36 
+   OVERALL AVERAGES:          17236.87 / 14977.04 / 137.36 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 15338.78 / 176.41 
+   OVERALL AVERAGES:          17032.71 / 15338.78 / 176.41 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    16980.99 / 14593.72 / 165.37 
+   OVERALL AVERAGES:          16980.99 / 14593.72 / 165.37 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17119.61 / 15766.96 / 442.13 
+   OVERALL AVERAGES:          17119.61 / 15766.96 / 442.13 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    16873.64 / 15708.61 / 216.62 
+   OVERALL AVERAGES:          16873.64 / 15708.61 / 216.62 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 15063.96 / 291.59 
+   OVERALL AVERAGES:          17032.71 / 15063.96 / 291.59 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17158.52 / 15353.87 / 319.77 
+   OVERALL AVERAGES:          17158.52 / 15353.87 / 319.77 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 15025.48 / 526.06 
+   OVERALL AVERAGES:          17260.51 / 15025.48 / 526.06 
+
+
+real	0m0.599s
+user	0m0.300s
+sys	0m0.008s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 16940.73 / 116.28 
+   OVERALL AVERAGES:          18236.10 / 16940.73 / 116.28 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 17134.09 / 9532.51 
+   OVERALL AVERAGES:          17476.27 / 17134.09 / 9532.51 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 14811.80 / 149.18 
+   OVERALL AVERAGES:          17236.87 / 14811.80 / 149.18 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 14881.54 / 215.40 
+   OVERALL AVERAGES:          17032.71 / 14881.54 / 215.40 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 15808.63 / 183.12 
+   OVERALL AVERAGES:          17260.51 / 15808.63 / 183.12 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17415.80 / 15618.44 / 319.57 
+   OVERALL AVERAGES:          17415.80 / 15618.44 / 319.57 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 15500.02 / 336.14 
+   OVERALL AVERAGES:          17321.61 / 15500.02 / 336.14 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17430.87 / 15572.80 / 210.78 
+   OVERALL AVERAGES:          17430.87 / 15572.80 / 210.78 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 15813.78 / 228.86 
+   OVERALL AVERAGES:          17476.27 / 15813.78 / 228.86 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17403.75 / 14592.85 / 517.59 
+   OVERALL AVERAGES:          17403.75 / 14592.85 / 517.59 
+
+
+real	0m0.592s
+user	0m0.292s
+sys	0m0.012s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 17035.99 / 186.91 
+   OVERALL AVERAGES:          18236.10 / 17035.99 / 186.91 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 16855.18 / 210.19 
+   OVERALL AVERAGES:          17476.27 / 16855.18 / 210.19 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 15591.01 / 158.06 
+   OVERALL AVERAGES:          17236.87 / 15591.01 / 158.06 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 16208.79 / 227.46 
+   OVERALL AVERAGES:          17032.71 / 16208.79 / 227.46 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 15306.62 / 413.93 
+   OVERALL AVERAGES:          17260.51 / 15306.62 / 413.93 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17415.80 / 15962.02 / 527.03 
+   OVERALL AVERAGES:          17415.80 / 15962.02 / 527.03 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 15619.02 / 448.69 
+   OVERALL AVERAGES:          17321.61 / 15619.02 / 448.69 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17430.87 / 15752.04 / 412.04 
+   OVERALL AVERAGES:          17430.87 / 15752.04 / 412.04 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17315.93 / 16246.93 / 752.79 
+   OVERALL AVERAGES:          17315.93 / 16246.93 / 752.79 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17367.72 / 15187.80 / 674.76 
+   OVERALL AVERAGES:          17367.72 / 15187.80 / 674.76 
+
+
+real	0m0.514s
+user	0m0.236s
+sys	0m0.016s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 16733.74 / 353.35 
+   OVERALL AVERAGES:          18236.10 / 16733.74 / 353.35 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18040.02 / 16766.76 / 155.95 
+   OVERALL AVERAGES:          18040.02 / 16766.76 / 155.95 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 14768.14 / 281.03 
+   OVERALL AVERAGES:          17236.87 / 14768.14 / 281.03 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 15242.01 / 147.47 
+   OVERALL AVERAGES:          17032.71 / 15242.01 / 147.47 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 16714.88 / 373.39 
+   OVERALL AVERAGES:          17260.51 / 16714.88 / 373.39 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17415.80 / 14959.10 / 326.72 
+   OVERALL AVERAGES:          17415.80 / 14959.10 / 326.72 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 15792.59 / 650.57 
+   OVERALL AVERAGES:          17321.61 / 15792.59 / 650.57 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17430.87 / 15299.76 / 296.97 
+   OVERALL AVERAGES:          17430.87 / 15299.76 / 296.97 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17315.93 / 15363.49 / 422.74 
+   OVERALL AVERAGES:          17315.93 / 15363.49 / 422.74 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17403.75 / 14603.58 / 393.92 
+   OVERALL AVERAGES:          17403.75 / 14603.58 / 393.92 
+
+
+real	0m0.587s
+user	0m0.248s
+sys	0m0.024s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 17100.95 / 2741.38 
+   OVERALL AVERAGES:          18236.10 / 17100.95 / 2741.38 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 17001.64 / 8876.83 
+   OVERALL AVERAGES:          17476.27 / 17001.64 / 8876.83 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 14945.06 / 185.25 
+   OVERALL AVERAGES:          17236.87 / 14945.06 / 185.25 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 16310.54 / 229.82 
+   OVERALL AVERAGES:          17032.71 / 16310.54 / 229.82 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 14331.84 / 357.66 
+   OVERALL AVERAGES:          17260.51 / 14331.84 / 357.66 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17178.04 / 16099.79 / 224.38 
+   OVERALL AVERAGES:          17178.04 / 16099.79 / 224.38 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 15437.62 / 608.18 
+   OVERALL AVERAGES:          17321.61 / 15437.62 / 608.18 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17430.87 / 15076.67 / 224.59 
+   OVERALL AVERAGES:          17430.87 / 15076.67 / 224.59 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17315.93 / 15402.65 / 428.87 
+   OVERALL AVERAGES:          17315.93 / 15402.65 / 428.87 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17403.75 / 14451.32 / 1064.95 
+   OVERALL AVERAGES:          17403.75 / 14451.32 / 1064.95 
+
+
+real	0m0.600s
+user	0m0.268s
+sys	0m0.000s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 16672.63 / 199.59 
+   OVERALL AVERAGES:          18236.10 / 16672.63 / 199.59 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 16626.48 / 433.41 
+   OVERALL AVERAGES:          17476.27 / 16626.48 / 433.41 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 15178.70 / 325.01 
+   OVERALL AVERAGES:          17236.87 / 15178.70 / 325.01 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17385.72 / 14504.57 / 118.73 
+   OVERALL AVERAGES:          17385.72 / 14504.57 / 118.73 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 16393.61 / 381.09 
+   OVERALL AVERAGES:          17260.51 / 16393.61 / 381.09 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17415.80 / 15320.61 / 233.83 
+   OVERALL AVERAGES:          17415.80 / 15320.61 / 233.83 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 15754.62 / 593.25 
+   OVERALL AVERAGES:          17321.61 / 15754.62 / 593.25 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17207.40 / 14814.02 / 371.32 
+   OVERALL AVERAGES:          17207.40 / 14814.02 / 371.32 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17315.93 / 14802.48 / 348.91 
+   OVERALL AVERAGES:          17315.93 / 14802.48 / 348.91 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17403.75 / 15070.36 / 386.25 
+   OVERALL AVERAGES:          17403.75 / 15070.36 / 386.25 
+
+
+real	0m0.582s
+user	0m0.260s
+sys	0m0.020s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 16863.40 / 153.38 
+   OVERALL AVERAGES:          18236.10 / 16863.40 / 153.38 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 16399.24 / 293.67 
+   OVERALL AVERAGES:          17476.27 / 16399.24 / 293.67 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 14709.01 / 272.62 
+   OVERALL AVERAGES:          17236.87 / 14709.01 / 272.62 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 14420.97 / 137.65 
+   OVERALL AVERAGES:          17032.71 / 14420.97 / 137.65 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 16061.27 / 233.48 
+   OVERALL AVERAGES:          17260.51 / 16061.27 / 233.48 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17178.04 / 13920.90 / 263.45 
+   OVERALL AVERAGES:          17178.04 / 13920.90 / 263.45 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 15987.52 / 236.97 
+   OVERALL AVERAGES:          17321.61 / 15987.52 / 236.97 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17207.40 / 14797.66 / 492.47 
+   OVERALL AVERAGES:          17207.40 / 14797.66 / 492.47 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17315.93 / 15310.97 / 267.94 
+   OVERALL AVERAGES:          17315.93 / 15310.97 / 267.94 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17403.75 / 14850.28 / 512.69 
+   OVERALL AVERAGES:          17403.75 / 14850.28 / 512.69 
+
+
+real	0m0.647s
+user	0m0.276s
+sys	0m0.020s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 4CLAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    18236.10 / 17260.91 / 572.99 
+   OVERALL AVERAGES:          18236.10 / 17260.91 / 572.99 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17476.27 / 16830.24 / 288.42 
+   OVERALL AVERAGES:          17476.27 / 16830.24 / 288.42 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17236.87 / 15260.75 / 299.09 
+   OVERALL AVERAGES:          17236.87 / 15260.75 / 299.09 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17032.71 / 15126.04 / 180.23 
+   OVERALL AVERAGES:          17032.71 / 15126.04 / 180.23 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17260.51 / 15612.12 / 455.61 
+   OVERALL AVERAGES:          17260.51 / 15612.12 / 455.61 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17415.80 / 14746.21 / 272.11 
+   OVERALL AVERAGES:          17415.80 / 14746.21 / 272.11 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17321.61 / 15297.89 / 234.67 
+   OVERALL AVERAGES:          17321.61 / 15297.89 / 234.67 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17385.72 / 15615.66 / 597.69 
+   OVERALL AVERAGES:          17385.72 / 15615.66 / 597.69 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17315.93 / 15354.37 / 358.28 
+   OVERALL AVERAGES:          17315.93 / 15354.37 / 358.28 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    17403.75 / 15218.01 / 461.90 
+   OVERALL AVERAGES:          17403.75 / 15218.01 / 461.90 
+
+
+real	0m0.576s
+user	0m0.264s
+sys	0m0.008s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ for i in `seq 10`; do time mpirun --hostfile hostnames -np 2 --map-by node -mca plm_rsh_no_tree_spawn 1 mpi_bandwidthNB; done
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    169.33 / 145.83 / 101.21 
+   OVERALL AVERAGES:          169.33 / 145.83 / 101.21 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    195.42 / 180.88 / 164.06 
+   OVERALL AVERAGES:          195.42 / 180.88 / 164.06 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    206.68 / 191.31 / 175.54 
+   OVERALL AVERAGES:          206.68 / 191.31 / 175.54 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    208.49 / 198.00 / 181.73 
+   OVERALL AVERAGES:          208.49 / 198.00 / 181.73 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    213.54 / 202.27 / 180.48 
+   OVERALL AVERAGES:          213.54 / 202.27 / 180.48 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    216.22 / 207.53 / 194.30 
+   OVERALL AVERAGES:          216.22 / 207.53 / 194.30 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.54 / 208.72 / 196.66 
+   OVERALL AVERAGES:          218.54 / 208.72 / 196.66 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.35 / 211.72 / 202.92 
+   OVERALL AVERAGES:          219.35 / 211.72 / 202.92 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.45 / 213.69 / 199.87 
+   OVERALL AVERAGES:          221.45 / 213.69 / 199.87 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    220.99 / 213.90 / 201.35 
+   OVERALL AVERAGES:          220.99 / 213.90 / 201.35 
+
+
+real	0m5.743s
+user	0m2.408s
+sys	0m3.076s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    161.16 / 147.24 / 118.07 
+   OVERALL AVERAGES:          161.16 / 147.24 / 118.07 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    190.39 / 178.66 / 161.82 
+   OVERALL AVERAGES:          190.39 / 178.66 / 161.82 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    200.06 / 191.05 / 178.62 
+   OVERALL AVERAGES:          200.06 / 191.05 / 178.62 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    209.86 / 197.03 / 170.94 
+   OVERALL AVERAGES:          209.86 / 197.03 / 170.94 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    210.71 / 202.05 / 183.89 
+   OVERALL AVERAGES:          210.71 / 202.05 / 183.89 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    216.29 / 206.27 / 189.39 
+   OVERALL AVERAGES:          216.29 / 206.27 / 189.39 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.37 / 208.98 / 197.74 
+   OVERALL AVERAGES:          218.37 / 208.98 / 197.74 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.67 / 212.10 / 201.79 
+   OVERALL AVERAGES:          218.67 / 212.10 / 201.79 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.00 / 214.14 / 201.95 
+   OVERALL AVERAGES:          221.00 / 214.14 / 201.95 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.04 / 214.15 / 201.31 
+   OVERALL AVERAGES:          221.04 / 214.15 / 201.31 
+
+
+real	0m5.753s
+user	0m2.136s
+sys	0m3.316s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    164.61 / 144.68 / 110.74 
+   OVERALL AVERAGES:          164.61 / 144.68 / 110.74 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    187.71 / 179.04 / 160.52 
+   OVERALL AVERAGES:          187.71 / 179.04 / 160.52 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    202.57 / 190.68 / 172.17 
+   OVERALL AVERAGES:          202.57 / 190.68 / 172.17 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    210.19 / 197.41 / 183.83 
+   OVERALL AVERAGES:          210.19 / 197.41 / 183.83 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    211.50 / 201.89 / 186.92 
+   OVERALL AVERAGES:          211.50 / 201.89 / 186.92 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    217.04 / 207.04 / 193.61 
+   OVERALL AVERAGES:          217.04 / 207.04 / 193.61 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.51 / 209.25 / 192.49 
+   OVERALL AVERAGES:          218.51 / 209.25 / 192.49 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    220.82 / 211.69 / 192.54 
+   OVERALL AVERAGES:          220.82 / 211.69 / 192.54 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.40 / 214.18 / 190.38 
+   OVERALL AVERAGES:          221.40 / 214.18 / 190.38 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.83 / 215.46 / 201.71 
+   OVERALL AVERAGES:          221.83 / 215.46 / 201.71 
+
+
+real	0m5.703s
+user	0m2.384s
+sys	0m3.060s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    157.86 / 144.69 / 107.59 
+   OVERALL AVERAGES:          157.86 / 144.69 / 107.59 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    191.11 / 178.07 / 161.03 
+   OVERALL AVERAGES:          191.11 / 178.07 / 161.03 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    199.27 / 191.24 / 178.73 
+   OVERALL AVERAGES:          199.27 / 191.24 / 178.73 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    206.65 / 196.61 / 185.78 
+   OVERALL AVERAGES:          206.65 / 196.61 / 185.78 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    211.42 / 202.86 / 188.75 
+   OVERALL AVERAGES:          211.42 / 202.86 / 188.75 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    215.13 / 207.85 / 196.82 
+   OVERALL AVERAGES:          215.13 / 207.85 / 196.82 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    217.46 / 210.08 / 191.05 
+   OVERALL AVERAGES:          217.46 / 210.08 / 191.05 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.01 / 212.29 / 202.10 
+   OVERALL AVERAGES:          218.01 / 212.29 / 202.10 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    220.31 / 213.63 / 201.70 
+   OVERALL AVERAGES:          220.31 / 213.63 / 201.70 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.29 / 215.79 / 204.59 
+   OVERALL AVERAGES:          221.29 / 215.79 / 204.59 
+
+
+real	0m5.726s
+user	0m2.408s
+sys	0m3.032s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    170.53 / 145.80 / 103.79 
+   OVERALL AVERAGES:          170.53 / 145.80 / 103.79 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    192.05 / 179.18 / 165.91 
+   OVERALL AVERAGES:          192.05 / 179.18 / 165.91 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    200.86 / 190.93 / 179.91 
+   OVERALL AVERAGES:          200.86 / 190.93 / 179.91 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    207.63 / 198.43 / 184.93 
+   OVERALL AVERAGES:          207.63 / 198.43 / 184.93 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    211.74 / 202.60 / 186.15 
+   OVERALL AVERAGES:          211.74 / 202.60 / 186.15 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    217.04 / 206.40 / 191.64 
+   OVERALL AVERAGES:          217.04 / 206.40 / 191.64 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    217.29 / 209.37 / 196.52 
+   OVERALL AVERAGES:          217.29 / 209.37 / 196.52 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.24 / 211.26 / 191.62 
+   OVERALL AVERAGES:          221.24 / 211.26 / 191.62 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    222.20 / 213.80 / 199.76 
+   OVERALL AVERAGES:          222.20 / 213.80 / 199.76 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.93 / 215.38 / 206.42 
+   OVERALL AVERAGES:          221.93 / 215.38 / 206.42 
+
+
+real	0m5.689s
+user	0m2.448s
+sys	0m3.004s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    165.16 / 146.66 / 99.06 
+   OVERALL AVERAGES:          165.16 / 146.66 / 99.06 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    191.39 / 178.61 / 162.60 
+   OVERALL AVERAGES:          191.39 / 178.61 / 162.60 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    201.28 / 192.17 / 168.82 
+   OVERALL AVERAGES:          201.28 / 192.17 / 168.82 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    211.02 / 197.93 / 179.57 
+   OVERALL AVERAGES:          211.02 / 197.93 / 179.57 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    213.14 / 203.60 / 192.13 
+   OVERALL AVERAGES:          213.14 / 203.60 / 192.13 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    214.36 / 206.08 / 192.44 
+   OVERALL AVERAGES:          214.36 / 206.08 / 192.44 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    217.18 / 209.44 / 191.47 
+   OVERALL AVERAGES:          217.18 / 209.44 / 191.47 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.01 / 209.62 / 156.97 
+   OVERALL AVERAGES:          218.01 / 209.62 / 156.97 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    220.13 / 214.09 / 204.36 
+   OVERALL AVERAGES:          220.13 / 214.09 / 204.36 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.60 / 216.05 / 206.08 
+   OVERALL AVERAGES:          221.60 / 216.05 / 206.08 
+
+
+real	0m5.739s
+user	0m2.420s
+sys	0m3.040s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    167.91 / 147.05 / 101.36 
+   OVERALL AVERAGES:          167.91 / 147.05 / 101.36 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    192.22 / 177.79 / 162.48 
+   OVERALL AVERAGES:          192.22 / 177.79 / 162.48 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    200.40 / 190.86 / 178.84 
+   OVERALL AVERAGES:          200.40 / 190.86 / 178.84 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    208.71 / 196.36 / 180.39 
+   OVERALL AVERAGES:          208.71 / 196.36 / 180.39 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    211.55 / 202.45 / 185.91 
+   OVERALL AVERAGES:          211.55 / 202.45 / 185.91 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    215.25 / 206.05 / 192.90 
+   OVERALL AVERAGES:          215.25 / 206.05 / 192.90 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.88 / 209.25 / 191.93 
+   OVERALL AVERAGES:          219.88 / 209.25 / 191.93 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.99 / 210.49 / 198.84 
+   OVERALL AVERAGES:          219.99 / 210.49 / 198.84 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.32 / 214.38 / 201.00 
+   OVERALL AVERAGES:          219.32 / 214.38 / 201.00 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    220.82 / 214.46 / 150.14 
+   OVERALL AVERAGES:          220.82 / 214.46 / 150.14 
+
+
+real	0m5.749s
+user	0m2.520s
+sys	0m2.948s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    161.44 / 143.09 / 100.25 
+   OVERALL AVERAGES:          161.44 / 143.09 / 100.25 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    189.49 / 176.48 / 114.29 
+   OVERALL AVERAGES:          189.49 / 176.48 / 114.29 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    203.52 / 189.44 / 170.74 
+   OVERALL AVERAGES:          203.52 / 189.44 / 170.74 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    207.25 / 195.94 / 179.38 
+   OVERALL AVERAGES:          207.25 / 195.94 / 179.38 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    211.51 / 201.64 / 184.98 
+   OVERALL AVERAGES:          211.51 / 201.64 / 184.98 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    216.49 / 207.37 / 191.32 
+   OVERALL AVERAGES:          216.49 / 207.37 / 191.32 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    215.82 / 207.86 / 197.55 
+   OVERALL AVERAGES:          215.82 / 207.86 / 197.55 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.28 / 210.33 / 194.12 
+   OVERALL AVERAGES:          218.28 / 210.33 / 194.12 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.35 / 212.67 / 195.10 
+   OVERALL AVERAGES:          219.35 / 212.67 / 195.10 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.04 / 214.11 / 180.57 
+   OVERALL AVERAGES:          221.04 / 214.11 / 180.57 
+
+
+real	0m5.783s
+user	0m2.048s
+sys	0m3.432s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    171.37 / 145.25 / 94.25 
+   OVERALL AVERAGES:          171.37 / 145.25 / 94.25 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    191.50 / 177.03 / 148.64 
+   OVERALL AVERAGES:          191.50 / 177.03 / 148.64 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    203.87 / 190.79 / 176.47 
+   OVERALL AVERAGES:          203.87 / 190.79 / 176.47 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    213.17 / 197.38 / 175.02 
+   OVERALL AVERAGES:          213.17 / 197.38 / 175.02 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    213.36 / 202.69 / 191.06 
+   OVERALL AVERAGES:          213.36 / 202.69 / 191.06 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    218.69 / 206.99 / 193.42 
+   OVERALL AVERAGES:          218.69 / 206.99 / 193.42 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    217.15 / 209.49 / 192.65 
+   OVERALL AVERAGES:          217.15 / 209.49 / 192.65 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    220.26 / 211.43 / 196.78 
+   OVERALL AVERAGES:          220.26 / 211.43 / 196.78 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.54 / 212.73 / 199.78 
+   OVERALL AVERAGES:          219.54 / 212.73 / 199.78 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    220.27 / 214.84 / 203.98 
+   OVERALL AVERAGES:          220.27 / 214.84 / 203.98 
+
+
+real	0m5.737s
+user	0m2.572s
+sys	0m2.896s
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-06
+************************************************************
+task    0 is on 4CLAB307 partner=   1
+task    1 is on 5ALAB307 partner=   0
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    163.52 / 146.00 / 110.80 
+   OVERALL AVERAGES:          163.52 / 146.00 / 110.80 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    195.88 / 181.76 / 158.54 
+   OVERALL AVERAGES:          195.88 / 181.76 / 158.54 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    204.09 / 191.49 / 170.88 
+   OVERALL AVERAGES:          204.09 / 191.49 / 170.88 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    209.86 / 198.23 / 178.77 
+   OVERALL AVERAGES:          209.86 / 198.23 / 178.77 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    215.28 / 202.21 / 182.28 
+   OVERALL AVERAGES:          215.28 / 202.21 / 182.28 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    215.41 / 206.32 / 194.05 
+   OVERALL AVERAGES:          215.41 / 206.32 / 194.05 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.20 / 210.44 / 197.27 
+   OVERALL AVERAGES:          219.20 / 210.44 / 197.27 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    219.72 / 211.25 / 199.75 
+   OVERALL AVERAGES:          219.72 / 211.25 / 199.75 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.32 / 213.38 / 199.00 
+   OVERALL AVERAGES:          221.32 / 213.38 / 199.00 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -    1:    221.90 / 214.75 / 204.23 
+   OVERALL AVERAGES:          221.90 / 214.75 / 204.23 
+
+
+real	0m5.767s
+user	0m2.288s
+sys	0m3.168s
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ 
+
+
