@@ -40,8 +40,7 @@ if (rank == 0) {
 
   start = MPI_Wtime();
   while (1) {
-    MPI_Isend(data, MSGSIZE, MPI_BYTE, dest, tag, MPI_COMM_WORLD, &req);
-    MPI_Recv(&ack, 1, MPI_INT, dest, 120, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+    MPI_Send(data, MSGSIZE, MPI_BYTE, dest, tag, MPI_COMM_WORLD);
     count++;
     if (count % 10 == 0) {
       end = MPI_Wtime();
@@ -49,7 +48,6 @@ if (rank == 0) {
       start = MPI_Wtime();
       }
     }
-    MPI_Wait(&req, &status);
   }
 
 /****************************** Receive task ********************************/
@@ -57,14 +55,12 @@ if (rank == 0) {
 if (rank == 1) {
   while (1) {
     MPI_Recv(data, MSGSIZE, MPI_BYTE, source, tag, MPI_COMM_WORLD, &status);
-    MPI_Isend(&ack, 1, MPI_INT, source, 120, MPI_COMM_WORLD, &req);
     /* Do some work  - at least more than the send task */
     result = 0.0;
     for (i=0; i < 1000000; i++) 
       result = result + (double)random();
     //fprintf(stderr, "Loop done.\n");
     }
-    MPI_Wait(&req, &status);
   }
 
 MPI_Finalize();

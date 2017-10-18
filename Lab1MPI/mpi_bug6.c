@@ -54,7 +54,7 @@ if (rank < 2) {
     }
   if (rank == 1) {
     src = 0;
-    offset = REPS;
+    offset = 0;
     }
   dest = src;
 
@@ -73,8 +73,10 @@ if (rank < 2) {
    operation request handles to capture. offset is where the task should
    store each request as it is captured in the reqs() array.  */
 if (rank > 1) {
-  nreqs = REPS;
-
+  if (rank == 3)
+    nreqs = REPS;
+  else
+    nreqs = 0;
 /* Task 2 does the blocking send operation */
   if (rank == 2) {
     dest = 3;

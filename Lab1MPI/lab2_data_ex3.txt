@@ -26,6 +26,20 @@ Task 0: Received 1 char(s) from task 1 with tag 0
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 mpi_bug2.c:
 +----------------------------------------------+
 lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug2
@@ -77,6 +91,16 @@ Task 1 received = 90.000000
 Task 0 sent = 80
 Task 0 sent = 90
 
+
+
+
+
+
+
+
+
+
+
 mpi_bug3.c:
 +------------------------------------------------+
 lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug3
@@ -119,6 +143,17 @@ Sample results:
   1.600000e+07  1.600000e+07  1.600000e+07  1.600001e+07  1.600001e+07
   2.400000e+07  2.400000e+07  2.400000e+07  2.400001e+07  2.400001e+07
 *** Final sum= 2.608458e+14 ***
+
+
+
+
+
+
+
+
+
+
+
 
 
 mpi_bug4.c:
@@ -167,8 +202,264 @@ Sample results:
   2.400000e+07  2.400000e+07  2.400000e+07  2.400001e+07  2.400001e+07
 *** Final sum= 2.671416e+14 ***
 
+
+
+
+
+
+
+
+
 mpi_bug5.c:
 +------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug5bugado
+mpi_bug5 has started...
+INFO: Number of tasks= 4. Only using 2 tasks.
+Count= 10  Time= 0.000151 sec.
+Count= 20  Time= 0.000004 sec.
+Count= 30  Time= 0.000004 sec.
+Count= 40  Time= 0.000003 sec.
+Count= 50  Time= 0.000003 sec.
+Count= 60  Time= 0.000004 sec.
+Count= 70  Time= 0.000006 sec.
+Count= 80  Time= 0.000148 sec.
+Count= 90  Time= 0.000001 sec.
+Count= 100  Time= 0.000002 sec.
+Count= 110  Time= 0.000002 sec.
+Count= 120  Time= 0.000002 sec.
+Count= 130  Time= 0.000002 sec.
+Count= 140  Time= 0.000118 sec.
+Count= 150  Time= 1.868842 sec.
+Count= 160  Time= 0.000001 sec.
+Count= 170  Time= 0.000001 sec.
+Count= 180  Time= 0.000003 sec.
+Count= 190  Time= 0.000003 sec.
+Count= 200  Time= 0.000003 sec.
+Count= 210  Time= 0.000003 sec.
+Count= 220  Time= 0.000004 sec.
+Count= 230  Time= 0.000003 sec.
+Count= 240  Time= 0.000003 sec.
+Count= 250  Time= 0.000003 sec.
+Count= 260  Time= 0.000004 sec.
+Count= 270  Time= 0.000004 sec.
+Count= 280  Time= 2.108536 sec.
+Count= 290  Time= 0.000002 sec.
+Count= 300  Time= 0.000002 sec.
+Count= 310  Time= 0.000003 sec.
+Count= 320  Time= 0.000003 sec.
+Count= 330  Time= 0.000003 sec.
+Count= 340  Time= 0.000003 sec.
+Count= 350  Time= 0.000003 sec.
+Count= 360  Time= 0.000004 sec.
+Count= 370  Time= 0.000003 sec.
+Count= 380  Time= 0.000004 sec.
+Count= 390  Time= 0.000003 sec.
+Count= 400  Time= 2.108834 sec.
+Count= 410  Time= 0.000004 sec.
+Count= 420  Time= 0.000002 sec.
 
 +------------------------------------------------+
+Problema: Programa trava intermitentemente por 2 segundos
+Causa: Buffering do MPI causava problemas com a comunicação por falhas de sincronia (uma das tarefas levava bem mais tempo que a outra). A solução foi usar comunicação não-bloqueante e esperar por um "ack" da thread que recebia os dados (apenas comunicação não-bloqueante por si só deu um erro de buffering que comia toda a RAM da máquina)
 +------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug5
+mpi_bug5 has started...
+INFO: Number of tasks= 4. Only using 2 tasks.
+Count= 10  Time= 0.180621 sec.
+Count= 20  Time= 0.165738 sec.
+Count= 30  Time= 0.165046 sec.
+Count= 40  Time= 0.165019 sec.
+Count= 50  Time= 0.165084 sec.
+Count= 60  Time= 0.165064 sec.
+Count= 70  Time= 0.165668 sec.
+Count= 80  Time= 0.164985 sec.
+Count= 90  Time= 0.165161 sec.
+Count= 100  Time= 0.165144 sec.
+Count= 110  Time= 0.165056 sec.
+Count= 120  Time= 0.164993 sec.
+Count= 130  Time= 0.165014 sec.
+Count= 140  Time= 0.165191 sec.
+Count= 150  Time= 0.165188 sec.
+Count= 160  Time= 0.165031 sec.
+Count= 170  Time= 0.164937 sec.
+Count= 180  Time= 0.165115 sec.
+Count= 190  Time= 0.165293 sec.
+Count= 200  Time= 0.164985 sec.
+Count= 210  Time= 0.165127 sec.
+Count= 220  Time= 0.165195 sec.
+Count= 230  Time= 0.164894 sec.
+Count= 240  Time= 0.164931 sec.
+Count= 250  Time= 0.165321 sec.
+Count= 260  Time= 0.165165 sec.
+Count= 270  Time= 0.164931 sec.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mpi_bug6.c:
++------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug6
+Starting isend/irecv send/irecv test...
+Task 0 starting...
+Task 2 starting...
+Task 3 starting...
+Task 1 starting...
+Task 3 has done 100 irecvs
+Task 3 has done 200 irecvs
+Task 1 has done 100 isends/irecvs
+Task 3 has done 300 irecvs
+Task 3 has done 400 irecvs
+Task 3 has done 500 irecvs
+Task 1 has done 200 isends/irecvs
+Task 1 has done 300 isends/irecvs
+Task 3 has done 600 irecvs
+Task 3 has done 700 irecvs
+Task 3 has done 800 irecvs
+Task 3 has done 900 irecvs
+Task 3 has done 1000 irecvs
+Task 1 has done 400 isends/irecvs
+Task 1 has done 500 isends/irecvs
+Task 1 has done 600 isends/irecvs
+Task 1 has done 700 isends/irecvs
+Task 1 has done 800 isends/irecvs
+Task 1 has done 900 isends/irecvs
+Task 1 has done 1000 isends/irecvs
+Task 2 has done 100 sends
+Task 2 has done 200 sends
+Task 2 has done 300 sends
+Task 2 has done 400 sends
+Task 2 has done 500 sends
+Task 0 has done 100 isends/irecvs
+Task 2 has done 600 sends
+Task 2 has done 700 sends
+Task 2 has done 800 sends
+Task 2 has done 900 sends
+Task 2 has done 1000 sends
+Task 0 has done 200 isends/irecvs
+Task 0 has done 300 isends/irecvs
+Task 0 has done 400 isends/irecvs
+Task 0 has done 500 isends/irecvs
+Task 0 has done 600 isends/irecvs
+Task 0 has done 700 isends/irecvs
+Task 0 has done 800 isends/irecvs
+Task 0 has done 900 isends/irecvs
+Task 0 has done 1000 isends/irecvs
+[4CLAB307:3644] *** An error occurred in MPI_Waitall
+[4CLAB307:3644] *** reported by process [3751804929,1]
+[4CLAB307:3644] *** on communicator MPI_COMM_WORLD
+[4CLAB307:3644] *** MPI_ERR_REQUEST: invalid request
+[4CLAB307:3644] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[4CLAB307:3644] ***    and potentially your MPI job)
+[4CLAB307:03641] 1 more process has sent help message help-mpi-errors.txt / mpi_errors_are_fatal
+[4CLAB307:03641] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
++------------------------------------------------+
+Problema: Programa crashava dando erro de invalid request
+Causa: Endereçamento inválido dos requests na task 1, e tentando esperar por requests que nunca foram feitas na task 2 (que usava comunicação bloqueante)
++------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug6
+Starting isend/irecv send/irecv test...
+Task 0 starting...
+Task 2 starting...
+Task 3 starting...
+Task 1 starting...
+Task 2 has done 100 sends
+Task 0 has done 100 isends/irecvs
+Task 1 has done 100 isends/irecvs
+Task 3 has done 100 irecvs
+Task 3 has done 200 irecvs
+Task 3 has done 300 irecvs
+Task 0 has done 200 isends/irecvs
+Task 3 has done 400 irecvs
+Task 3 has done 500 irecvs
+Task 3 has done 600 irecvs
+Task 1 has done 200 isends/irecvs
+Task 3 has done 700 irecvs
+Task 3 has done 800 irecvs
+Task 3 has done 900 irecvs
+Task 3 has done 1000 irecvs
+Task 0 has done 300 isends/irecvs
+Task 2 has done 200 sends
+Task 2 has done 300 sends
+Task 2 has done 400 sends
+Task 2 has done 500 sends
+Task 2 has done 600 sends
+Task 2 has done 700 sends
+Task 2 has done 800 sends
+Task 2 has done 900 sends
+Task 0 has done 400 isends/irecvs
+Task 2 has done 1000 sends
+Task 1 has done 300 isends/irecvs
+Task 0 has done 500 isends/irecvs
+Task 1 has done 400 isends/irecvs
+Task 0 has done 600 isends/irecvs
+Task 1 has done 500 isends/irecvs
+Task 0 has done 700 isends/irecvs
+Task 1 has done 600 isends/irecvs
+Task 0 has done 800 isends/irecvs
+Task 1 has done 700 isends/irecvs
+Task 0 has done 900 isends/irecvs
+Task 1 has done 800 isends/irecvs
+Task 0 has done 1000 isends/irecvs
+Task 1 has done 900 isends/irecvs
+Task 1 has done 1000 isends/irecvs
+Task 1 time(wall)= 0.003965 sec
+Task 2 time(wall)= 0.000787 sec
+Task 0 time(wall)= 0.003984 sec
+Task 3 time(wall)= 0.000777 sec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mpi_bug7.c:
++------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug7
+Task 0 on 4CLAB307 starting...
+Root: Number of MPI tasks is: 4
+Task 1 on 4CLAB307 starting...
+Task 2 on 4CLAB307 starting...
+Task 3 on 4CLAB307 starting...
+
++------------------------------------------------+
+Problema: Programa trava
+Causa: Programa tenta fazer broadcast com valor de count igual ao rank do processo, quando o correto seria count = 1
++------------------------------------------------+
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$ mpirun -np 4 mpi_bug7
+Task 0 on 4CLAB307 starting...
+Root: Number of MPI tasks is: 4
+Task 2 on 4CLAB307 starting...
+Task 1 on 4CLAB307 starting...
+Task 3 on 4CLAB307 starting...
+lab@4CLAB307:~/Documentos/LPP/Lab1MPI$
+
